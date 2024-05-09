@@ -1,0 +1,266 @@
+/* Base style for all cards */
+.baseball-card {
+    position: relative;
+    width: 320px; /* Standard width */
+    height: 500px; /* Increased height */
+    border: 4px solid #000;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-size: cover; /* Crop and stretch the background image */
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* Default theme with a specific background */
+.default .baseball-card {
+    background-image: url('C:/Users/kodyr/OneDrive/Desktop/pictures/LTBSBC.webp');
+    background-color: white;
+    color: black;
+}
+
+/* Classic theme */
+.classic .baseball-card {
+    background-image: url('C:/Users/kodyr/OneDrive/Desktop/pictures/80sbaseball.webp');
+    background-color: #f7f1e3;
+    color: #2c2c54;
+}
+
+/* Modern theme */
+.modern .baseball-card {
+    background-image: url('C:/Users/kodyr/OneDrive/Desktop/pictures/90s.webp');
+    background-color: #485460;
+    color: #d1ccc0;
+}
+
+/* Vintage theme */
+.vintage .baseball-card {
+    background-image: url('C:/Users/kodyr/OneDrive/Desktop/pictures/vintage-paper.jpg');
+    background-color: #cd6133;
+    color: #ffffff;
+}
+
+
+#selection-area .dropdowns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#selection-area .dropdown {
+    flex: 1;
+    margin-right: 10px;
+}
+
+#selection-area .dropdown:last-child {
+    margin-right: 0;
+}
+
+
+.team-logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.player-photo {
+    margin-top: 80px;
+}
+
+.player-photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px; /* Make the player photo slightly rounded */
+    /* Ensure the checkered background doesn't cover the photo */
+    position: relative;
+    z-index: 1;
+}
+
+/* Base style for player info - applies to all themes */
+.player-info {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Default theme player info */
+.default .player-info {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+}
+
+/* Classic theme player info */
+.classic .player-info {
+    background-color: rgba(246, 229, 141, 0.9); /* Light yellow with more opacity */
+}
+
+/* Modern theme player info */
+.modern .player-info {
+    background-color: rgba(47, 53, 66, 0.9); /* Dark charcoal with higher opacity */
+    color: #d1ccc0; /* Light grey text color for readability */
+}
+
+/* Vintage theme player info */
+.vintage .player-info {
+    background-color: rgba(210, 180, 140, 0.7); /* Antique bronze with less opacity */
+    color: black; /* White text for better contrast */
+}
+
+
+/* Default theme fonts */
+.default .player-info h2 {
+    font-family: 'Bangers', cursive; /* Groovy display font for Default */
+}
+.default .player-info p {
+    font-family: 'Roboto', sans-serif; /* Modern sans-serif font for Default */
+}
+
+/* Classic theme fonts */
+.classic .player-info h2 {
+    font-family: 'Playfair Display', serif; /* Elegant serif font for Classic */
+}
+.classic .player-info p {
+    font-family: 'Lora', serif; /* Refined serif font for Classic */
+}
+
+/* Modern theme fonts */
+.modern .player-info h2 {
+    font-family: 'Oswald', sans-serif; /* Bold sans-serif font for Modern */
+}
+.modern .player-info p {
+    font-family: 'Open Sans', sans-serif; /* Clean sans-serif font for Modern */
+}
+
+/* Vintage theme fonts */
+.vintage .player-info h2 {
+    font-family: 'Abril Fatface', cursive; /* Distinct cursive font for Vintage */
+}
+.vintage .player-info p {
+    font-family: 'Courier New', monospace; /* Classic typewriter font for Vintage */
+}
+
+/* Retro theme player info and card */
+.retro .baseball-card {
+    background-image: url('C:/Users/kodyr/OneDrive/Desktop/pictures/retrobaseball.jpg');
+    background-color: #f4c2c2; /* Soft pink */
+}
+.retro .player-info {
+    background-color: rgba(255, 239, 213, 0.85); /* Peach puff semi-transparent */
+    color: #5d4037; /* Deep brown */
+}
+.retro .player-info h2 {
+    font-family: 'Pacifico', cursive; /* Cursive retro font */
+}
+.retro .player-info p {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Urban theme player info and card */
+.urban .baseball-card {
+    background-image: url('C:/Users/kodyr/OneDrive/Desktop/pictures/urban.jpg');
+    background-color: #424242; /* Dark grey */
+}
+.urban .player-info {
+    background-color: rgba(69, 90, 100, 0.8); /* Blue-grey semi-transparent */
+    color: #eceff1; /* Light blue-grey */
+}
+.urban .player-info h2 {
+    font-family: 'Alfa Slab One', cursive; /* Bold, attention-grabbing font */
+}
+.urban .player-info p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Nature theme player info and card */
+.nature .baseball-card {
+    background-image: url('C:/Users/kodyr/OneDrive/Desktop/pictures/nature.jpg');
+    background-color: #3e2723; /* Deep brown */
+}
+.nature .player-info {
+    background-color: rgba(46, 125, 50, 0.8); /* Green semi-transparent */
+    color: #a5d6a7; /* Light green */
+}
+.nature .player-info h2 {
+    font-family: 'Merriweather', serif; /* Elegant, readable font with nature vibes */
+}
+.nature .player-info p {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Action-Packed Background */
+.action-packed .baseball-card {
+    background-image: url('path_to_action_packed_background.jpg');
+    background-color: #0D47A1; /* Deep blue as a fallback */
+}
+.action-packed .player-info h2 {
+    font-family: 'Alfa Slab One', cursive; /* Bold, attention-grabbing font */
+}
+.action-packed .player-info p {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Vintage Gear Background */
+.vintage-gear .baseball-card {
+    background-image: url('path_to_vintage_gear_background.jpg');
+    background-color: #795548; /* Coffee brown as a fallback */
+}
+.vintage-gear .player-info h2 {
+    font-family: 'Playfair Display', serif; /* Elegant serif font */
+}
+.vintage-gear .player-info p {
+    font-family: 'Lora', serif;
+}
+
+/* Futuristic Digital Background */
+.futuristic-digital .baseball-card {
+    background-image: url('C:/Users/kodyr/OneDrive/Desktop/pictures/futuristic_digital.webp');
+    background-color: #311B92; /* Deep purple as a fallback */
+}
+
+.futuristic-digital .player-info {
+    background-color: rgba(0, 0, 0, 0.5); /* Adding a semi-transparent black overlay for better text visibility */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.futuristic-digital .player-info h2 {
+    font-family: 'Oswald', sans-serif; /* Modern, clean font */
+    font-size: 24px; /* Increased size for better visibility */
+    color: #00E5FF; /* Bright neon blue to match the theme */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow to improve readability */
+}
+
+.futuristic-digital .player-info p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px; /* Slightly larger to ensure readability */
+    color: #FFFFFF; /* Pure white for contrast */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Text shadow to help the text stand out */
+}
+
+
+
+/* Dynamic Abstract Background */
+.dynamic-abstract .baseball-card {
+    background-image: url('C:/Users/kodyr/OneDrive/Desktop/pictures/dynamic_abstract.webp');
+    background-color: #E53935; /* Bright red as a fallback */
+}
+.dynamic-abstract .player-info h2 {
+    font-family: 'Fjalla One', sans-serif; /* Bold, modern font */
+    color: #ffffff; /* White color for better visibility */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Text shadow for readability */
+}
+.dynamic-abstract .player-info p {
+    font-family: 'Lato', sans-serif; /* Clean and contemporary font */
+    color: black; /* White color to stand out */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Text shadow for readability */
+}
+
+
+/* Styles for player stats */
+.player-stats {
+    margin-top: 10px;
+}

@@ -1,0 +1,15 @@
+.card {
+    width: 537px;
+    height: 311px;
+    position: relative;
+    background: url('') no-repeat;
+    background-size: cover;
+}
+.text, .image {
+    position: absolute;
+    overflow: hidden;
+}
+.text {
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,76 @@
+Grass: 
+
+.baseball-card {
+    position: relative;
+    width: 320px;
+    height: 420px;
+    border: 4px solid #000;
+    border-radius: 10px;
+    background-color: #f4f4f4; /* Fallback color */
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Grass Texture */
+    background: repeating-linear-gradient(
+        to bottom,
+        #568203,
+        #568203 10%,
+        #85bb3d 10%,
+        #85bb3d 20%
+    );
+}
+
+Vintage Gradient: 
+
+.baseball-card {
+    position: relative;
+    width: 320px;
+    height: 420px;
+    border: 4px solid #000;
+    border-radius: 10px;
+    background-color: #f4f4f4; /* Fallback color */
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Vintage Paper Texture */
+    background: 
+        /* Noise Texture */
+        url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVR42mP89PnzfwYQACMQN/BgIRVgAAAABJRU5ErkJggg==') repeat,
+        /* Gradient Overlay */
+        linear-gradient(45deg, #f5deb3 0%, #d2b48c 100%);
+}
+
+Subtle Gradient:
+
+.baseball-card {
+    position: relative;
+    width: 320px;
+    height: 420px;
+    border: 4px solid #000;
+    border-radius: 10px;
+    background-color: #f4f4f4; /* Fallback color */
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Subtle Gradient Background */
+    background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+}
+
+    background-image: url('https://thumbs.dreamstime.com/b/memphis-style-grunge-art-seamless-pattern-vector-geometric-elements-texture-s-design-fabric-white-background-colored-polygon-113367877.jpg');
+
+
+    
+.baseball-card {
+    /* Add local geometric background pattern */
+    background-image: url('C:/Users/kodyr/OneDrive/Desktop/pictures/cyberwave.webp');
+    background-size: cover; /* Crop and stretch the background image */
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* Your other styles */
+    position: relative;
+    width: 320px; /* Increased width */
+    height: 420px; /* Increased height */
+    border: 4px solid #000;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} 
+
