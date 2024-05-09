@@ -563,7 +563,7 @@ listItem.innerHTML = `
         <p><strong>Hometown:</strong> ${player.hometown}</p>
         <p><strong>High School:</strong> ${player.High_School}</p>
         ${prevSchoolInfo}
-        <p><strong>Twitter:</strong> <a href="${twitterLink}" target="_blank">@${player.twitter}</a></p>
+        <p><strong>Twitter:</strong> <a href="${twitterLink}" target="_blank">@ ${player.twitter}</a></p>
         <p><strong>La Tech Sports:</strong> <a href="${player.LA_Tech_Sports}" target="_blank">View Profile</a></p>
     </div>
     <hr>
