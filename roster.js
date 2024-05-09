@@ -10,7 +10,8 @@ const rosterData = [
         High_School: "Belen Jesuit Preparatory",
         Prev_School: "N/A",
         twitter: "NickAlo64363210",
-        image: "NA1.png"
+        image: "NA1.png",
+        LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/nick-alonso/12843"
     },
     { 
         number: 2,
@@ -21,7 +22,8 @@ const rosterData = [
         hometown: "Jackson, MS",
         High_School: "Jackson Preparatory School",
         Prev_School: "N/A",
-        twitter: "BerchThaxton"
+        twitter: "BerchThaxton",
+         LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/thaxton-berch/12845"
     },
     { 
         number: 3,
@@ -32,7 +34,8 @@ const rosterData = [
         hometown: "Baton Rouge, LA",
         High_School: "University High School",
         Prev_School: "LSU",
-        twitter: "Will_Safford3"
+        twitter: "Will_Safford3", 
+        LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/will-safford/12864"
     },
     { 
         number: 4,
@@ -43,7 +46,8 @@ const rosterData = [
         hometown: "Lake Charles, MS",
         High_School: "Barbe High School",
         Prev_School: "LSU",
-        twitter: "BrodyDrost"
+        twitter: "BrodyDrost",
+        LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/brody-drost/12852"
     },
     { 
         number: 5,
@@ -54,7 +58,8 @@ const rosterData = [
         hometown: "Beaumont, TX",
         High_School: "West Brook High School",
         Prev_School: "N/A",
-        twitter: "ColeMcConnell_1"
+        twitter: "ColeMcConnell_1",
+        LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/cole-mcconnell/12859"
     },
     { 
         number: 6,
@@ -65,7 +70,8 @@ const rosterData = [
         hometown: "Seminary, MS",
         High_School: "Seminary High School",
         Prev_School: "N/A",
-        twitter: "adariusmyers7"
+        twitter: "adariusmyers7",
+        LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/adarius-myers/12861"
     },
     { 
         number: 7,
@@ -76,7 +82,8 @@ const rosterData = [
         hometown: "Longwood, FL",
         High_School: "Lake Mary High School",
         Prev_School: "Eckerd College",
-        twitter: "MikeBallard007"
+        twitter: "MikeBallard007",
+        LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/michael-ballard/12887"
     },
     { 
         number: 9,
@@ -87,7 +94,8 @@ const rosterData = [
         hometown: "Southaven, MS",
         High_School: "Desoto Central",
         Prev_School: "N/A",
-        twitter: "CoatesColton"
+        twitter: "CoatesColton",
+        LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/colton-coates/12900"
     },
     { 
         number: 10,
