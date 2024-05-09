@@ -103,7 +103,8 @@ document.addEventListener("DOMContentLoaded", function() {
             hometown: "Southaven, MS",
             High_School: "Desoto Central",
             Prev_School: "N/A",
-            twitter: "CoatesColton"
+            twitter: "CoatesColton",
+            image: "CC9.png"
         },
         { 
             number: 10,
@@ -115,7 +116,8 @@ document.addEventListener("DOMContentLoaded", function() {
             High_School: "Hardin-Jefferson High School",
             Prev_School: "N/A",
             twitter: "mcleod_samuel",
-            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/logan-mcleod/12860"
+            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/logan-mcleod/12860",
+            image: "LM10.png"
         },
         { 
             number: 12,
@@ -127,7 +129,8 @@ document.addEventListener("DOMContentLoaded", function() {
             High_School: "Miami Killian High School",
             Prev_School: "N/A",
             twitter: "jcoronaa12",
-            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/jorge-corona/12849"
+            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/jorge-corona/12849",
+            image: "JC12.png"
         },
         { 
             number: 13,
@@ -139,7 +142,8 @@ document.addEventListener("DOMContentLoaded", function() {
             High_School: "Rosepine High School",
             Prev_School: "N/A",
             twitter: "smithjake_4",
-            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/jake-smith/12905"
+            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/jake-smith/12905",
+            image: "JS13.png"
         },
         { 
             number: 14,
@@ -151,7 +155,8 @@ document.addEventListener("DOMContentLoaded", function() {
             High_School: "Barbe High School",
             Prev_School: "N/A",
             twitter: "GrantComeaux1",
-            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/grant-comeaux/12847"
+            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/grant-comeaux/12847",
+            image: "GC14.png"
         },
         { 
             number: 15,
@@ -163,7 +168,8 @@ document.addEventListener("DOMContentLoaded", function() {
             High_School: "Catholic BR High School",
             Prev_School: "N/A",
             twitter: "CJSturiale",
-            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/cj-sturiale/12869"
+            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/cj-sturiale/12869",
+            image: "CS15.png"
         },
         { 
             number: 16,
@@ -175,7 +181,8 @@ document.addEventListener("DOMContentLoaded", function() {
             High_School: "Lakeside High School",
             Prev_School: "Navarro JC",
             twitter: "ethan_bates3",
-            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/ethan-bates/12844"
+            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/ethan-bates/12844",
+            image: "EB16.png"
         },
         { 
             number: 17,
@@ -187,7 +194,8 @@ document.addEventListener("DOMContentLoaded", function() {
             High_School: "C.E. Byrd High School",
             Prev_School: "N/A",
             twitter: "SladeNettervil1",
-            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/slade-netterville/12862"
+            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/slade-netterville/12862",
+            image: "SN17.png"
         },
         { 
             number: 18,
@@ -199,7 +207,8 @@ document.addEventListener("DOMContentLoaded", function() {
             High_School: "Ruston High School",
             Prev_School: "UNO",
             twitter: "kasten_furr",
-            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/kasten-furr/12893"
+            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/kasten-furr/12893",
+            image: "KF18.png"
         },
         { 
             number: 19,
@@ -211,7 +220,8 @@ document.addEventListener("DOMContentLoaded", function() {
             High_School: "Texas High School",
             Prev_School: "N/A",
             twitter: "Smith03Luke",
-            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/luke-smith/12866"
+            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/luke-smith/12866",
+            image: "LS19.png"
         },
         { 
             number: 20,
@@ -223,7 +233,8 @@ document.addEventListener("DOMContentLoaded", function() {
             High_School: "Gretna High School",
             Prev_School: "Iowa Western CC",
             twitter: "GrantHubka",
-            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/grant-hubka/12857"
+            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/grant-hubka/12857",
+            image: "GH20.png"
         },
         { 
             number: 21,
@@ -235,7 +246,8 @@ document.addEventListener("DOMContentLoaded", function() {
             High_School: "St. Louis Catholic High School",
             Prev_School: "N/A",
             twitter: "JakeLaRocca2",
-            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/jake-larocca/12949"
+            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/jake-larocca/12949",
+            image: "JL21.png"
         },
         { 
             number: 24,
@@ -247,7 +259,8 @@ document.addEventListener("DOMContentLoaded", function() {
             High_School: "Prosper High School",
             Prev_School: "Tyler JC",
             twitter: "_Ddavis13_",
-            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/dalton-davis/12851"
+            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/dalton-davis/12851",
+            image: "DD24.png"
         },
         { 
             number: 25,
@@ -259,7 +272,8 @@ document.addEventListener("DOMContentLoaded", function() {
             High_School: "St. Louis Catholic High School",
             Prev_School: "N/A",
             twitter: "ReidSnider",
-            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/reid-snider/12904"
+            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/reid-snider/12904",
+            image: "RS25.png"
         },
         { 
             number: 26,
@@ -271,7 +285,8 @@ document.addEventListener("DOMContentLoaded", function() {
             High_School: "Petal High School",
             Prev_School: "Pearl River CC",
             twitter: "Blake_Hooks8",
-            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/blake-hooks/12886"
+            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/blake-hooks/12886",
+            image: "BH26.png"
         },
         { 
             number: 28,
@@ -283,7 +298,8 @@ document.addEventListener("DOMContentLoaded", function() {
             High_School: "Midlothian High School",
             Prev_School: "N/A",
             twitter: "cadencopeland14",
-            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/caden-copeland/12848"
+            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/caden-copeland/12848",
+            image: "CC28.png"
         },
         { 
             number: 29,
@@ -295,7 +311,8 @@ document.addEventListener("DOMContentLoaded", function() {
             High_School: "Harrisburg High School",
             Prev_School: "Wabash Valley JC",
             twitter: "CrabbIsaac",
-            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/isaac-crabb/12850"
+            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/isaac-crabb/12850",
+            image: "IC29.png"
         },
         { 
             number: 30,
@@ -307,7 +324,8 @@ document.addEventListener("DOMContentLoaded", function() {
             High_School: "Greene County Tech High School",
             Prev_School: "N/A",
             twitter: "GuinnHutson",
-            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/hutson-guinn/12948"
+            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/hutson-guinn/12948",
+            image: "HG30.png"
         },
         { 
             number: 31,
@@ -319,7 +337,8 @@ document.addEventListener("DOMContentLoaded", function() {
             High_School: "West Orange High School",
             Prev_School: "Wingate",
             twitter: "sammybroderson",
-            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/sam-brodersen/12889"
+            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/sam-brodersen/12889",
+            image: "SB31.png"
         },
         { 
             number: 32,
@@ -331,7 +350,8 @@ document.addEventListener("DOMContentLoaded", function() {
             High_School: "Bell City High School",
             Prev_School: "Jefferson College",
             twitter: "Luke_Nichols03",
-            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/luke-nichols/12899"
+            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/luke-nichols/12899",
+            image: "LN32.png"
         },
         { 
             number: 33,
@@ -343,7 +363,8 @@ document.addEventListener("DOMContentLoaded", function() {
             High_School: "Madison Central High School",
             Prev_School: "Hinds CC",
             twitter: "cnation11",
-            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/connor-nation/12891"
+            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/connor-nation/12891",
+            image: "CN33.png"
         },
         { 
             number: 34,
@@ -355,7 +376,8 @@ document.addEventListener("DOMContentLoaded", function() {
             High_School: "Oak Grove High School",
             Prev_School: "Tennessee",
             twitter: "TurnerSwistak",
-            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/turner-swistak/12898"
+            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/turner-swistak/12898",
+            image: "TS34.png"
         },
         { 
             number: 35,
@@ -367,7 +389,8 @@ document.addEventListener("DOMContentLoaded", function() {
             High_School: "ESB Academy",
             Prev_School: "N/A",
             twitter: "FraginalsNick",
-            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/nick-fraginals/12854"
+            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/nick-fraginals/12854",
+            image: "NF35.png"
         },
         { 
             number: 36,
@@ -379,7 +402,8 @@ document.addEventListener("DOMContentLoaded", function() {
             High_School: "Archbishop McCarthy High School",
             Prev_School: "N/A",
             twitter: "N/A",
-            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/greg-martinez/12858"
+            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/greg-martinez/12858",
+            image: "GM36.png"
         },
         { 
             number: 37,
@@ -391,7 +415,8 @@ document.addEventListener("DOMContentLoaded", function() {
             High_School: "Little Rock Christian Academy",
             Prev_School: "N/A",
             twitter: "ReeceTarini",
-            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/reece-tarini/12888"
+            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/reece-tarini/12888",
+            image: "RT37.png"
         },
         { 
             number: 38,
@@ -403,7 +428,8 @@ document.addEventListener("DOMContentLoaded", function() {
             High_School: "Greene County Tech High School",
             Prev_School: "Dyersburg State CC",
             twitter: "NateCrider3",
-            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/nate-crider/12895"
+            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/nate-crider/12895",
+            image: "NC38.png"
         },
         { 
             number: 39,
@@ -415,7 +441,8 @@ document.addEventListener("DOMContentLoaded", function() {
             High_School: "Parkiew Baptist School",
             Prev_School: "N/A",
             twitter: "ryan_23h",
-            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/ryan-harland/12855"
+            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/ryan-harland/12855",
+            image: "RH39.png"
         },
         { 
             number: 40,
@@ -427,7 +454,8 @@ document.addEventListener("DOMContentLoaded", function() {
             High_School: "Lukin Hudson High School",
             Prev_School: "Tyler JC",
             twitter: "Reed_smith44",
-            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/reed-smith/12867"
+            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/reed-smith/12867",
+            image: "RS40.png"
         },
         { 
             number: 41,
@@ -439,7 +467,8 @@ document.addEventListener("DOMContentLoaded", function() {
             High_School: "Ruston High School",
             Prev_School: "N/A",
             twitter: "CadePatterson13",
-            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/cade-patterson/12885"
+            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/cade-patterson/12885",
+            image: "CP41.png"
         },
         { 
             number: 44,
@@ -451,7 +480,8 @@ document.addEventListener("DOMContentLoaded", function() {
             High_School: "Seminary High School",
             Prev_School: "N/A",
             twitter: "karsonevans",
-            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/karson-evans/12853"
+            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/karson-evans/12853",
+            image: "KE44.png"
         },
         { 
             number: 45,
@@ -463,7 +493,8 @@ document.addEventListener("DOMContentLoaded", function() {
             High_School: "Cedar Ridge High School",
             Prev_School: "N/A",
             twitter: "HavernJacob",
-            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/jacob-havern/12856"
+            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/jacob-havern/12856",
+            image: "JH45.png"
         },
         { 
             number: 46,
@@ -475,7 +506,8 @@ document.addEventListener("DOMContentLoaded", function() {
             High_School: "Glenbrook High School",
             Prev_School: "N/A",
             twitter: "haydenharmon05",
-            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/hayden-harmon/12902"
+            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/hayden-harmon/12902",
+            image: "HH46.png"
         },
         { 
             number: 50,
@@ -487,7 +519,8 @@ document.addEventListener("DOMContentLoaded", function() {
             High_School: "Jesuit High School",
             Prev_School: "N/A",
             twitter: "porche_ryan",
-            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/ryan-porche/12863"
+            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/ryan-porche/12863",
+            image: "RP50.png"
         },
         { 
             number: 51,
@@ -499,7 +532,8 @@ document.addEventListener("DOMContentLoaded", function() {
             High_School: "Ruston High School",
             Prev_School: "N/A",
             twitter: "rj_brown_",
-            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/r-j-brown/12890"
+            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/r-j-brown/12890",
+            image: "RB51.png"
         },
         { 
             number: 52,
@@ -511,7 +545,8 @@ document.addEventListener("DOMContentLoaded", function() {
             High_School: "Alexandria Senior High School",
             Prev_School: "West Alabama",
             twitter: "brenton_thiels",
-            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/brenton-thiels/12896"
+            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/brenton-thiels/12896",
+            image: "BT52.png"
         },
         { 
             number: 54,
@@ -523,7 +558,8 @@ document.addEventListener("DOMContentLoaded", function() {
             High_School: "Tioga High School",
             Prev_School: "N/A",
             twitter: "HaydanToal2022",
-            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/haydan-toal/12870"
+            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/haydan-toal/12870",
+            image: "HT54.png"
         },
         { 
             number: 57,
@@ -535,7 +571,8 @@ document.addEventListener("DOMContentLoaded", function() {
             High_School: "Munster High School",
             Prev_School: "UCF",
             twitter: "wmelby7",
-            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/will-melby-jr-/12897"
+            LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/will-melby-jr-/12897",
+            image: "WM57.png"
         },
     
     ];
