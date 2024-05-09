@@ -145,7 +145,7 @@
 
 /* Retro theme player info and card */
 .retro .baseball-card {
-    background-image: url('C:/Users/kodyr/OneDrive/Desktop/pictures/retrobaseball.jpg');
+    background-image: url('retrobaseball.jpg');
     background-color: #f4c2c2; /* Soft pink */
 }
 .retro .player-info {
@@ -177,7 +177,7 @@
 
 /* Nature theme player info and card */
 .nature .baseball-card {
-    background-image: url('C:/Users/kodyr/OneDrive/Desktop/pictures/nature.jpg');
+    background-image: url('nature.jpg');
     background-color: #3e2723; /* Deep brown */
 }
 .nature .player-info {
@@ -217,7 +217,7 @@
 
 /* Futuristic Digital Background */
 .futuristic-digital .baseball-card {
-    background-image: url('C:/Users/kodyr/OneDrive/Desktop/pictures/futuristic_digital.webp');
+    background-image: url('futuristic_digital.webp');
     background-color: #311B92; /* Deep purple as a fallback */
 }
 
@@ -245,7 +245,7 @@
 
 /* Dynamic Abstract Background */
 .dynamic-abstract .baseball-card {
-    background-image: url('C:/Users/kodyr/OneDrive/Desktop/pictures/dynamic_abstract.webp');
+    background-image: url('dynamic_abstract.webp');
     background-color: #E53935; /* Bright red as a fallback */
 }
 .dynamic-abstract .player-info h2 {
