@@ -14,28 +14,28 @@
 
 /* Default theme with a specific background */
 .default .baseball-card {
-    background-image: url('C:/Users/kodyr/OneDrive/Desktop/pictures/LTBSBC.webp');
+    background-image: url('LTBSBC.webp');
     background-color: white;
     color: black;
 }
 
 /* Classic theme */
 .classic .baseball-card {
-    background-image: url('C:/Users/kodyr/OneDrive/Desktop/pictures/80sbaseball.webp');
+    background-image: url('80sbaseball.webp');
     background-color: #f7f1e3;
     color: #2c2c54;
 }
 
 /* Modern theme */
 .modern .baseball-card {
-    background-image: url('C:/Users/kodyr/OneDrive/Desktop/pictures/90s.webp');
+    background-image: url('90s.webp');
     background-color: #485460;
     color: #d1ccc0;
 }
 
 /* Vintage theme */
 .vintage .baseball-card {
-    background-image: url('C:/Users/kodyr/OneDrive/Desktop/pictures/vintage-paper.jpg');
+    background-image: url('vintage-paper.jpg');
     background-color: #cd6133;
     color: #ffffff;
 }
@@ -161,7 +161,7 @@
 
 /* Urban theme player info and card */
 .urban .baseball-card {
-    background-image: url('C:/Users/kodyr/OneDrive/Desktop/pictures/urban.jpg');
+    background-image: url('urban.jpg');
     background-color: #424242; /* Dark grey */
 }
 .urban .player-info {
