@@ -620,7 +620,7 @@ function generateCard(theme) {
                 <div class="baseball-card" style="width: ${cardWidth}px; height: ${cardHeight}px;">
                     <img class="team-logo" src="C:/Users/kodyr/OneDrive/Desktop/pictures/techlogo.png" alt="Team Logo">
                     <div class="player-photo">
-                        <img src="C:/Users/kodyr/OneDrive/Desktop/pictures/Roster/${selectedPlayer.image}" alt="Player Photo">
+                        <img src="Roster/${selectedPlayer.image}" alt="Player Photo">
                     </div>
                     <div class="player-info">
                         <h2>${selectedPlayer.name}</h2>
