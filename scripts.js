@@ -54,9 +54,10 @@ document.addEventListener("DOMContentLoaded", function() {
             { date: "May 10", location: "Home", opponent: "Western Kentucky", result: "W 9-7" },
             { date: "May 11", location: "Home", opponent: "Western Kentucky", result: "W 12-2" },
             { date: "May 12", location: "Home", opponent: "Western Kentucky", result: "W 7-1" },
-            { date: "May 17", location: "Away", opponent: "Liberty", result: "" },
-            { date: "May 18", location: "Away", opponent: "Liberty", result: "" },
-            { date: "May 19", location: "Away", opponent: "Liberty", result: "" },
+            { date: "May 17", location: "Away", opponent: "Liberty", result: "4-3" },
+            { date: "May 18", location: "Away", opponent: "Liberty", result: "12-8" },
+            { date: "May 19", location: "Away", opponent: "Liberty", result: "10-1" },
+	    { date: "May 22", location: "Home", opponent: "MTSU", result: "" },
 
     ];
 
