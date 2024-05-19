@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
     ];
 
     // Define the number of latest games to display on the main page
-const latestGamesCount = 12;
+const latestGamesCount = 10;
 
 // Get the index to start slicing from
 const startIndex = Math.max(scheduleData.length - latestGamesCount, 0);
