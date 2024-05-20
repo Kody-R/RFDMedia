@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #eee;
+}
+
+#teamStats table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+#teamStats th, #teamStats td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+#teamStats th {
+    background-color: #f4f4f4;
+}
+
+#gameResults li {
+    margin-bottom: 5px;
+}
+

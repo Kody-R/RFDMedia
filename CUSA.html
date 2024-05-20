@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CUSA Baseball Standings & Schedule</title>
+    <link rel="stylesheet" href="cusa.css">
+</head>
+<body>
+    <h1>CUSA Baseball Standings</h1>
+    <table id="standings">
+        <tr>
+            <th>Rank</th>
+            <th>Team</th>
+            <th>Wins</th>
+            <th>Losses</th>
+            <th>Win %</th>  
+        </tr>
+        <!-- Standings will be populated by JavaScript -->
+    </table>
+    
+
+    <h2>Select a Team to View Schedule</h2>
+    <select id="teamSelect" onchange="displaySelectedTeamSchedule(globalRecords)">
+        <!-- options will be populated here -->
+    </select>
+    
+
+    <div id="teamSchedule">
+        <h3 id="scheduleTitle"></h3>
+        <div id="teamStats">
+            <table>
+                <tr><th>Home Wins</th><td id="homeWins"></td></tr>
+                <tr><th>Home Losses</th><td id="homeLosses"></td></tr>
+                <tr><th>Runs Scored at Home</th><td id="homeRunsScored"></td></tr>
+                <tr><th>Runs Allowed at Home</th><td id="homeRunsAllowed"></td></tr>
+                <tr><th>Run Differential at Home</th><td id="homeRunDiff"></td></tr>
+                <tr><th>Away Wins</th><td id="awayWins"></td></tr>
+                <tr><th>Away Losses</th><td id="awayLosses"></td></tr>
+                <tr><th>Runs Scored Away</th><td id="awayRunsScored"></td></tr>
+                <tr><th>Runs Allowed Away</th><td id="awayRunsAllowed"></td></tr>
+                <tr><th>Run Differential Away</th><td id="awayRunDiff"></td></tr>
+            </table>
+        </div>
+        <ul id="gameResults"></ul>
+    </div>
+    
+
+    <script src="cusa.js"></script>
+</body>
+</html>
