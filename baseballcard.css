@@ -14,28 +14,28 @@
 
 /* Default theme with a specific background */
 .default .baseball-card {
-    background-image: url('LTBSBC.webp');
+    background-image: url('pictures/LTBSBC.webp');
     background-color: white;
     color: black;
 }
 
 /* Classic theme */
 .classic .baseball-card {
-    background-image: url('80sbaseball.webp');
+    background-image: url('pictures/80sbaseball.webp');
     background-color: #f7f1e3;
     color: #2c2c54;
 }
 
 /* Modern theme */
 .modern .baseball-card {
-    background-image: url('90s.webp');
+    background-image: url('pictures/90s.webp');
     background-color: #485460;
     color: #d1ccc0;
 }
 
 /* Vintage theme */
 .vintage .baseball-card {
-    background-image: url('vintage-paper.jpg');
+    background-image: url('pictures/vintage-paper.jpg');
     background-color: #cd6133;
     color: #ffffff;
 }
@@ -145,7 +145,7 @@
 
 /* Retro theme player info and card */
 .retro .baseball-card {
-    background-image: url('retrobaseball.jpg');
+    background-image: url('pictures/retrobaseball.jpg');
     background-color: #f4c2c2; /* Soft pink */
 }
 .retro .player-info {
@@ -161,7 +161,7 @@
 
 /* Urban theme player info and card */
 .urban .baseball-card {
-    background-image: url('urban.jpg');
+    background-image: url('pictures/urban.jpg');
     background-color: #424242; /* Dark grey */
 }
 .urban .player-info {
@@ -177,7 +177,7 @@
 
 /* Nature theme player info and card */
 .nature .baseball-card {
-    background-image: url('nature.jpg');
+    background-image: url('pictures/nature.jpg');
     background-color: #3e2723; /* Deep brown */
 }
 .nature .player-info {
@@ -191,33 +191,9 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/* Action-Packed Background */
-.action-packed .baseball-card {
-    background-image: url('path_to_action_packed_background.jpg');
-    background-color: #0D47A1; /* Deep blue as a fallback */
-}
-.action-packed .player-info h2 {
-    font-family: 'Alfa Slab One', cursive; /* Bold, attention-grabbing font */
-}
-.action-packed .player-info p {
-    font-family: 'Roboto', sans-serif;
-}
-
-/* Vintage Gear Background */
-.vintage-gear .baseball-card {
-    background-image: url('path_to_vintage_gear_background.jpg');
-    background-color: #795548; /* Coffee brown as a fallback */
-}
-.vintage-gear .player-info h2 {
-    font-family: 'Playfair Display', serif; /* Elegant serif font */
-}
-.vintage-gear .player-info p {
-    font-family: 'Lora', serif;
-}
-
 /* Futuristic Digital Background */
 .futuristic-digital .baseball-card {
-    background-image: url('futuristic_digital.webp');
+    background-image: url('pictures/futuristic_digital.webp');
     background-color: #311B92; /* Deep purple as a fallback */
 }
 
@@ -245,7 +221,7 @@
 
 /* Dynamic Abstract Background */
 .dynamic-abstract .baseball-card {
-    background-image: url('dynamic_abstract.webp');
+    background-image: url('pictures/dynamic_abstract.webp');
     background-color: #E53935; /* Bright red as a fallback */
 }
 .dynamic-abstract .player-info h2 {
