@@ -655,7 +655,7 @@ function generateCard(theme) {
             // Build the HTML for the card
             let cardHTML = `
                 <div class="baseball-card" style="width: ${cardWidth}px; height: ${cardHeight}px;">
-                    <img class="team-logo" src="techlogo.png" alt="Team Logo">
+                    <img class="team-logo" src="pictures/techlogo.png" alt="Team Logo">
                     <div class="player-photo">
                         <img src="pictures/${selectedPlayer.image}" alt="Player Photo">
                     </div>
