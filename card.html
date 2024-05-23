@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LA Tech Baseball Cards</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="card.css">
+</head>
+<body>
+    <header>
+        <h1>Louisiana Tech Bulldog Baseball</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="schedule.html">Full Schedule</a></li>
+                <li><a href="cusa.html">CUSA Standings</a></li>
+                <li><a href="roster.html">Roster</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="commitments.html">Commitments</a></li>
+                <li><a href="NCAABaseball.html">NCAA Baseball Cover</a></li>
+                <li><a href="card.html">Card Generator</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="selection-area">
+        <h2>Select a Player and Theme</h2>
+        <div class="dropdowns">
+            <div class="dropdown">
+                <label for="player-dropdown">Player:</label>
+                <select id="player-dropdown">
+                    <option value="">Select a player...</option>
+                    <!-- Player options will be populated dynamically -->
+                </select>
+            </div>
+            <div class="dropdown">
+                <label for="theme-dropdown">Theme:</label>
+                <select id="theme-dropdown">
+                    <option value="default">Default</option>
+                    <option value="action">Action</option>
+                </select>
+            </div>
+        </div>
+        <button id="generateCard">Generate Card</button>
+    </section>
+
+    <div id="card" style="display: none;">
+        <img id="diamondImage" src="Diamond99.png" alt="Rating Diamond">
+        <img id="playerImage" src="" alt="Player image">
+        <div class="info">
+            <h1 id="playerName">Player Name</h1>
+            <p id="teamName">Team Name</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 LA Tech Baseball Cards</p>
+    </footer>
+
+    <script src="card.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom NCAA Baseball Cover Generator</title>
+    <link rel="stylesheet" href="NCAAB.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Create Your Custom NCAA Baseball Cover</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                <li><a href="schedule.html">Full Schedule</a></li>
+                <li><a href="cusa.html">CUSA Standings</a></li>
+                <li><a href="roster.html">Roster</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="commitments.html">Commitments</a></li>
+                <li><a href="NCAABaseball.html">NCAA Baseball Cover</a></li>
+                <li><a href="card.html">Card Generator</a></li>
+                </ul>
+            </nav>
+        </header>
+    </header>
+
+    <div id="coverGenerator">
+        <input type="file" id="playerUpload" accept="image/*">
+        <button onclick="generateCover()">Generate Cover</button>
+            <div id="gameCover">
+                <img id="baseCover" src="G:\RFDMedia\NCAA\NCAA_Baseball.jpg" alt="Base Cover" />
+				<img id="playerImage" src="" alt="Player Image" style="display: none;" />
+                <img id="techLogo" src="G:\RFDMedia\NCAA\techlogo.png" alt="Tech Logo" />
+            </div>
+    </div>
+
+    <footer>
+        <p>© 2024 RFD Media</p>
+    </footer>
+
+    <script src="NCAAB.js"></script>
+</body>
+</html>

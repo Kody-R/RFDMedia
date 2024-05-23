@@ -12,18 +12,41 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="schedule.html"> Full Schedule</a></li>
-                <li><a href="CUSA.html">CUSA Standings & Schedule</a></li>
+                <li><a href="schedule.html">Full Schedule</a></li>
+                <li><a href="cusa.html">CUSA Standings</a></li>
                 <li><a href="roster.html">Roster</a></li>
                 <li><a href="articles.html">Articles</a></li>
-                <li><a href="commitments.html">Commitments</a></li> <!-- New page -->
+                <li><a href="commitments.html">Commitments</a></li>
+                <li><a href="NCAABaseball.html">NCAA Baseball Cover</a></li>
+                <li><a href="card.html">Card Generator</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="commitments">
-        <!-- Dynamically generated commitment entries will be inserted here -->
+        <div class="tab">
+            <button class="tablinks" onclick="openClass(event, '2024_HS')">2024 HS</button>
+            <button class="tablinks" onclick="openClass(event, '2024_JUCO')">2024 JUCO</button>
+            <button class="tablinks" onclick="openClass(event, '2025_HS')">2025 HS</button>
+        </div>
+    
+        <div id="2024_HS" class="tabcontent">
+            <table id="table_2024_HS">
+                <tr><th>Name</th><th>Position</th><th>School</th><th>Hometown</th><th>Twitter</th><th>Profile</th></tr>
+            </table>
+        </div>
+        <div id="2024_JUCO" class="tabcontent">
+            <table id="table_2024_JUCO">
+                <tr><th>Name</th><th>Position</th><th>School</th><th>Hometown</th><th>Twitter</th><th>Profile</th></tr>
+            </table>
+        </div>
+        <div id="2025_HS" class="tabcontent">
+            <table id="table_2025_HS">
+                <tr><th>Name</th><th>Position</th><th>School</th><th>Hometown</th><th>Twitter</th><th>Profile</th></tr>
+            </table>
+        </div>
     </section>
+    
 
     <footer>
         <p>&copy; 2024 RFD Media</p>
