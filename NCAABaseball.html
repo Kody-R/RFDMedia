@@ -26,14 +26,19 @@
     </header>
 
     <div id="coverGenerator">
-        <input type="file" id="playerUpload" accept="image/*">
-        <button onclick="generateCover()">Generate Cover</button>
-            <div id="gameCover">
-                <img id="baseCover" src="pictures/NCAA_Baseball.jpg" alt="Base Cover" />
-				<img id="playerImage" src="" alt="Player Image" style="display: none;" />
-                <img id="techLogo" src="pictures/techlogo.png" alt="Tech Logo" />
-            </div>
+        <label for="player-dropdown">Select Player:</label>
+        <select id="player-dropdown">
+            <option value="">Select a player...</option>
+            <!-- Player options will be populated dynamically -->
+        </select>
+        <button id="generateCoverButton">Generate Cover</button> <!-- Ensure the ID matches -->
+        <div id="gameCover">
+            <img id="baseCover" src="pictures/NCAA_Baseball.jpg" alt="Base Cover" />
+            <img id="playerImage" src="" alt="Player Image" style="display: none;" />
+            <img id="techLogo" src="pictures/techlogo.png" alt="Tech Logo" />
+        </div>
     </div>
+    
 
     <footer>
         <p>© 2024 RFD Media</p>
