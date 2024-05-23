@@ -129,7 +129,8 @@ const rosterData = [
         Prev_School: "N/A",
         twitter: "jcoronaa12",
         LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/jorge-corona/12849",
-        image: "JC12.png"
+        image: "JC12.png",
+        actionImage: "JCorona.png"
     },
     { 
         number: 13,
