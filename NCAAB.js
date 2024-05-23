@@ -253,7 +253,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (selectedPlayer && selectedPlayer.actionImage) {
             const playerImage = document.getElementById('playerImage');
-            playerImage.src = `pictures${selectedPlayer.actionImage}`; // Modify the path as necessary
+            playerImage.src = `pictures/${selectedPlayer.actionImage}`; // Modify the path as necessary
             playerImage.style.display = 'block';
         } else {
             alert("Selected player does not have an action image or no player selected.");
