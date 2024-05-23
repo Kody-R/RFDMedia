@@ -39,7 +39,7 @@ const rosterData = [
         twitter: "Will_Safford3",
         LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/will-safford/12864",
         image: "WS3.png",
-        actionImage: "Will_Saff.jpg"
+        actionImage: "Will_Saff.png"
     },
     { 
         number: 4,
@@ -458,7 +458,8 @@ const rosterData = [
         Prev_School: "Tyler JC",
         twitter: "Reed_smith44",
         LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/reed-smith/12867",
-        image: "RS40.png"
+        image: "RS40.png",
+        actionImage: "RSmith.png"
     },
     { 
         number: 41,
