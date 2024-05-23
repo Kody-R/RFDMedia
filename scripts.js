@@ -57,7 +57,8 @@ document.addEventListener("DOMContentLoaded", function() {
             { date: "May 17", location: "Away", opponent: "Liberty", result: "W 4-3" },
             { date: "May 18", location: "Away", opponent: "Liberty", result: "W 12-8" },
             { date: "May 19", location: "Away", opponent: "Liberty", result: "W 10-1" },
-            { date: "May 22", location: "CUSA", opponent: "Middle Tennessee", result: "" },
+            { date: "May 22", location: "CUSA", opponent: "Middle Tennessee", result: "W 8-2" },
+	    { date: "May 24", location: "CUSA", opponent: "Liberty", result: "" },
 
     ];
 
