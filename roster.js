@@ -23,7 +23,7 @@ const rosterData = [
         High_School: "Jackson Preparatory School",
         Prev_School: "N/A",
         twitter: "BerchThaxton",
-         LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/thaxton-berch/12845"
+        LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/thaxton-berch/12845"
     },
     { 
         number: 3,
@@ -34,7 +34,7 @@ const rosterData = [
         hometown: "Baton Rouge, LA",
         High_School: "University High School",
         Prev_School: "LSU",
-        twitter: "Will_Safford3", 
+        twitter: "Will_Safford3",
         LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/will-safford/12864"
     },
     { 
@@ -189,7 +189,7 @@ const rosterData = [
         class: "Sr.",
         hometown: "Ruston, LA",
         High_School: "Ruston High School",
-        Prev_School: "UNO",
+        Prev_School: "Univ. of New Orleans",
         twitter: "kasten_furr",
         LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/kasten-furr/12893"
     },
@@ -533,59 +533,24 @@ const rosterData = [
 ];
 // Add more players here
 
-
-// Function to generate roster HTML
-function generateRosterHTML(data) {
-const section = document.createElement("section");
-section.innerHTML = `<h2>Team Roster</h2>`;
-
-const rosterList = document.createElement("ul");
-rosterList.classList.add("roster-list");
-
-// Populate players in the roster list
-data.forEach(player => {
-const listItem = document.createElement("li");
-listItem.classList.add("player");
-
-let prevSchoolInfo = "";
-if (player.Prev_School !== "N/A") {
-    prevSchoolInfo = `<p><strong>Previous School:</strong> ${player.Prev_School}</p>`;
-}
-
-const twitterLink = `https://twitter.com/${player.twitter}`;
-
-listItem.innerHTML = `
-    <div>
-        <p><strong>Number:</strong> ${player.number}</p>
-        <p><strong>Name:</strong> ${player.name}</p>
-        <p><strong>Position:</strong> ${player.position}</p>
-        <p><strong>Class:</strong> ${player.class}</p>
-        <p><strong>Hometown:</strong> ${player.hometown}</p>
-        <p><strong>High School:</strong> ${player.High_School}</p>
-        ${prevSchoolInfo}
-        <p><strong>Twitter:</strong> <a href="${twitterLink}" target="_blank">@${player.twitter}</a></p>
-        <p><strong>La Tech Sports:</strong> <a href="${player.LA_Tech_Sports}" target="_blank">View Profile</a></p>
-    </div>
-    <hr>
-`;
-
-rosterList.appendChild(listItem);
+document.addEventListener("DOMContentLoaded", function() {
+    populateRosterTable(rosterData);
 });
 
-section.appendChild(rosterList);
-return section;
+function populateRosterTable(data) {
+    const table = document.getElementById("roster_table");
+    data.forEach(player => {
+        const row = table.insertRow(-1);
+        row.insertCell(0).innerText = player.number;
+        row.insertCell(1).innerText = player.name;
+        row.insertCell(2).innerText = player.position;
+        row.insertCell(3).innerText = player.height;
+        row.insertCell(4).innerText = player.class;
+        row.insertCell(5).innerText = player.hometown;
+        row.insertCell(6).innerText = player.High_School;
+        row.insertCell(7).innerText = player.Prev_School === "N/A" ? "" : player.Prev_School;
+        row.insertCell(8).innerHTML = `<a href="https://twitter.com/${player.twitter}" target="_blank">@${player.twitter}</a>`;
+        row.insertCell(9).innerHTML = player.LA_Tech_Sports ? `<a href="${player.LA_Tech_Sports}" target="_blank">View Profile</a>` : "";
+    });
 }
-
-
-
-
-// Function to populate roster section
-function populateRosterSection() {
-const rosterSection = document.getElementById("roster");
-const rosterHTML = generateRosterHTML(rosterData);
-rosterSection.appendChild(rosterHTML);
-}
-
-// Call the function to populate the roster section
-populateRosterSection(); 
 

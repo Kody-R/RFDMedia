@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+
    
    // Define commitment data
     const commitmentsData = {
@@ -36,61 +36,47 @@ document.addEventListener("DOMContentLoaded", function() {
     
     };
     
-
-  // Function to generate commitment HTML
-function generateCommitmentHTML(commitmentCategory, data) {
-    const section = document.createElement("section");
-    section.innerHTML = `<h2>${commitmentCategory}</h2>`;
+    document.addEventListener("DOMContentLoaded", function() {
+        // Populate tables with data for each class
+        generateTableRows(commitmentsData["2024 HS"], "table_2024_HS");
+        generateTableRows(commitmentsData["2024 JUCO"], "table_2024_JUCO");
+        generateTableRows(commitmentsData["2025 HS"], "table_2025_HS");
+        
+        // Initially open the first tab
+        document.getElementsByClassName('tablinks')[0].click();
+    });
     
-    // Create a div to contain the columns
-    const columnsContainer = document.createElement("div");
-    columnsContainer.classList.add("columns-container");
-    
-    // Calculate number of columns based on commitments length
-    const numColumns = Math.ceil(data.length / 3); // You can adjust the number of columns as needed
-
-    // Create and populate columns
-    for (let i = 0; i < numColumns; i++) {
-        const column = document.createElement("div");
-        column.classList.add("column");
-
-        // Populate commitments in the column
-        for (let j = i; j < data.length; j += numColumns) {
-            const entry = data[j];
-            const listItem = document.createElement("div");
-            listItem.innerHTML = `
-                <div class="commitment">
-                    <div>
-                        <p><strong>Name:</strong> ${entry.name}</p>
-                        <p><strong>Position:</strong> ${entry.position}</p>
-                        <p><strong>School:</strong> ${entry.school}</p>
-                        <p><strong>Hometown:</strong> ${entry.hometown}</p>
-                        <p><strong>Twitter:</strong> <a href="${entry.tlink}" target="_blank">${entry.twitter}</a></p>
-                        <p><strong>Stats:</strong> <a href="${entry.link}" target="_blank">View Profile</a></p>
-                    </div>
-                </div>
-                <hr>
-            `;
-            column.appendChild(listItem);
-        }
-
-        columnsContainer.appendChild(column);
+    // Function to generate rows for each commitment
+    function generateTableRows(data, tableId) {
+        const table = document.getElementById(tableId);
+        data.forEach(entry => {
+            const row = table.insertRow(-1);
+            row.insertCell(0).innerText = entry.name;
+            row.insertCell(1).innerText = entry.position;
+            row.insertCell(2).innerText = entry.school;
+            row.insertCell(3).innerText = entry.hometown;
+            row.insertCell(4).innerHTML = `<a href="${entry.tlink}" target="_blank">${entry.twitter}</a>`;
+            row.insertCell(5).innerHTML = `<a href="${entry.link}" target="_blank">View Profile</a>`;
+        });
     }
     
-    section.appendChild(columnsContainer);
-    return section;
-}
+    // Function to handle tab clicks
+    function openClass(evt, className) {
+        var i, tabcontent, tablinks;
+        // Hide all elements with class="tabcontent" by setting display to none
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        // Remove the class "active" from all elements with class="tablinks"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(className).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
 
-// Function to populate commitments section
-function populateCommitmentsSection() {
-    const commitmentsSection = document.getElementById("commitments");
-    Object.entries(commitmentsData).forEach(([category, data]) => {
-        const commitmentHTML = generateCommitmentHTML(category.replace("_", " "), data);
-        commitmentsSection.appendChild(commitmentHTML);
-    });
-} 
 
-// Call the function to populate commitments section
-populateCommitmentsSection(); 
 
-});
