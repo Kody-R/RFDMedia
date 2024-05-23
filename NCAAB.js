@@ -180,7 +180,8 @@ const rosterData = [
     { 
         number: 40,
         name: "Reed Smith",
-        image: "RS40.png"
+        image: "RS40.png",
+        actionImage: "RSmith.png"
     },
     { 
         number: 41,
