@@ -144,3 +144,28 @@ footer {
 .roster-style a:hover {
     text-decoration: underline;
 }
+
+/* Styles that apply when the screen width is 600px or larger */
+@media (min-width: 600px) {
+    .content {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+/* Styles for screens less than 600px wide */
+@media (max-width: 599px) {
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    .menu-button {
+        display: block;
+    }
+}
