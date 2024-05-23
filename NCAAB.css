@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+header, footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#gameCover {
+    position: relative;
+    display: inline-block;
+}
+
+#baseCover {
+    width: 800px;  /* Ensure this matches your actual image size */
+    height: 1000px;
+}
+
+#playerImage {
+    position: absolute;
+    top: 340px; /* Adjust this value to center or properly place the image vertically */
+    left: 120px; /* Adjust this value to center or properly place the image horizontally */
+    width: 500px;  /* Width of the space designated for the image on the cover */
+    height: 600px;  /* Height of the space designated for the image on the cover */
+    object-fit: contain; /* Ensures the whole image fits within the given dimensions without being cut off */
+    display: block;
+    border: none;  /* Ensures no border around the image */
+    outline: none;  /* Ensures no outline around the image */
+    box-shadow: none;  /* Ensures no shadow effect around the image */
+}
+
+
+#techLogo {
+    position: absolute;
+    bottom: 50px;  /* Adjust as necessary for optimal placement */
+    right: 50px;  /* Adjust as necessary for optimal placement */
+    width: 150px;  /* Set the width or leave it to scale naturally based on the image file */
+    height: 150px;  /* Maintain aspect ratio */
+    z-index: 15;  /* Make sure it's above the base cover but below interactive elements if any */
+}
+
+
+
+
+
+
+
+
+
+
