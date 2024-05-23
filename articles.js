@@ -1,11 +1,16 @@
+// Dictionary to store articles
+let articlesDictionary = {};
+
 window.onload = function() {
-    const articles = ['article1.txt', 'article2.txt']; // Add more files as needed
+    const articles = ['article1.txt', 'article2.txt', 'article3.txt']; // Add more files as needed
 
     articles.forEach(article => {
-        fetch(`Articles/${article}`)
+        fetch(`./path/to/articles/${article}`)
             .then(response => response.text())
             .then(text => {
                 const articleData = parseArticle(text);
+                // Store the article in the dictionary
+                articlesDictionary[articleData.title] = articleData;
                 createArticleLink(articleData);
             });
     });
@@ -24,13 +29,21 @@ function createArticleLink(article) {
     const section = document.getElementById('articles');
     const articleDiv = document.createElement('div');
     articleDiv.className = 'article';
-    articleDiv.innerHTML = `<h2>${article.title}</h2><button onclick="displayArticle('${article.title}')">Read</button>`;
+    articleDiv.innerHTML = `<h2>${article.title}</h2><button onclick="displayArticle('${article.title.replace(/'/g, "\\'")}')">Read</button>`;
     section.appendChild(articleDiv);
 }
 
 function displayArticle(title) {
-    // Add logic to display the article based on title
-    // This might require keeping a dictionary of loaded articles if not reloading from the server
+    const article = articlesDictionary[title];
+    const section = document.getElementById('articles');
+    section.innerHTML = ''; // Clear previous articles
+    const articleDiv = document.createElement('div');
+    articleDiv.className = 'article';
+    articleDiv.innerHTML = `
+        <h2>${article.title}</h2>
+        <p><strong>Author:</strong> ${article.author}</p>
+        <p><strong>Date:</strong> ${article.date}</p>
+        <div class="article-content">${article.content}</div>
+    `;
+    section.appendChild(articleDiv);
 }
-
-
