@@ -64,7 +64,13 @@ function displayArticle(title) {
         <p><strong>Date:</strong> ${article.date}</p>
         <div class="article-content">${article.content}</div>
     `;
+     const backButton = document.createElement('button');
+    backButton.textContent = 'Back to Articles';
+    backButton.setAttribute('data-title', ''); // Empty data-title for back functionality
+
     section.appendChild(articleDiv);
+    section.appendChild(backButton); // Append the back button after the article
+}
 }
 
 
