@@ -6,6 +6,16 @@ window.onload = function() {
     loadArticles();
 };
 
+function parseArticle(text) {
+    const lines = text.split('\n'); // Split the text into lines based on newline characters
+    const title = lines[0].replace('Title: ', ''); // Extract the title, assuming it's on the first line
+    const author = lines[1].replace('Author: ', ''); // Extract the author, assuming it's on the second line
+    const date = lines[2].replace('Date: ', ''); // Extract the date, assuming it's on the third line
+    const content = lines.slice(4).join('\n'); // Join the rest of the lines as article content, assuming content starts from the fifth line
+    return { title, author, date, content }; // Return an object with the parsed data
+}
+
+
 function loadArticles() {
     const articles = ['article1.txt', 'article2.txt']; // Update with actual file names
     const section = document.getElementById('articles');
