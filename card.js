@@ -39,7 +39,7 @@ const rosterData = [
         twitter: "Will_Safford3",
         LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/will-safford/12864",
         image: "WS3.png",
-        actionImage: "WS_Cover.jpg"
+        actionImage: "Will_Saff.jpg"
     },
     { 
         number: 4,
