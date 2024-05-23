@@ -3,37 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RFD Media - Articles</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="articles.css">
+    <title>LA Tech Baseball News</title>
 </head>
 <body>
     <header>
-        <h1>RFD Media - Articles</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="schedule.html">Full Schedule</a></li>
-                <li><a href="cusa.html">CUSA Standings</a></li>
-                <li><a href="roster.html">Roster</a></li>
-                <li><a href="articles.html">Articles</a></li>
-                <li><a href="commitments.html">Commitments</a></li>
-                <li><a href="NCAABaseball.html">NCAA Baseball Cover</a></li>
-                <li><a href="card.html">Card Generator</a></li>
-            </ul>
-        </nav>
+        <h1>LA Tech Baseball News</h1>
     </header>
-    
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/schedule">Schedule</a></li>
+            <li><a href="/roster">Roster</a></li>
+        </ul>
+    </nav>
+    <input type="file" id="file-input" multiple accept=".txt">
     <section id="articles">
-        <h2>Latest Articles</h2>
-        <div id="article-list">
-            <!-- Articles will be dynamically inserted here -->
-        </div>
+        <!-- Articles will be inserted here by JavaScript -->
     </section>
-
     <footer>
-        <p>&copy; 2024 RFD Media</p>
+        <p>LA Tech Baseball © 2024</p>
     </footer>
-
-    <script src="scripts.js"></script>
+    <script src="articles.js"></script>
 </body>
 </html>

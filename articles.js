@@ -1,41 +1,40 @@
-// Assume you have an array of articles with their titles and content
-const articles = [
-    { 
-        title: "Article 1",
-        content: "This is the content of Article 1."
-    },
-    { 
-        title: "Article 2",
-        content: "This is the content of Article 2."
-    },
-    // Add more articles here
-];
-
-// Function to populate article content based on the selected article
-function populateArticleContent(articleIndex) {
-    const articleContentSection = document.getElementById("article-content");
-    const selectedArticle = articles[articleIndex];
-    
-    // Check if the selected article exists
-    if (selectedArticle) {
-        // Update the content of the section with the selected article's content
-        articleContentSection.innerHTML = `
-            <h2>${selectedArticle.title}</h2>
-            <p>${selectedArticle.content}</p>
-        `;
-    } else {
-        articleContentSection.innerHTML = "<p>Article not found.</p>";
+document.getElementById('file-input').addEventListener('change', function(event) {
+    const files = event.target.files;
+    for (let i = 0; i < files.length; i++) {
+        const file = files[i];
+        const reader = new FileReader();
+        
+        reader.onload = function(e) {
+            const content = e.target.result;
+            const article = parseArticle(content);
+            displayArticle(article);
+        };
+        
+        reader.readAsText(file);
     }
+});
+
+function parseArticle(text) {
+    const lines = text.split('\n');
+    const title = lines[0].replace('Title: ', '');
+    const author = lines[1].replace('Author: ', '');
+    const date = lines[2].replace('Date: ', '');
+    const content = lines.slice(4).join('\n'); // Assuming the article starts at line 5
+
+    return { title, author, date, content };
 }
 
-// Assuming you have article links on the articles.html page, 
-// you can add event listeners to those links to load the article content dynamically.
+function displayArticle(article) {
+    const section = document.getElementById('articles');
+    const articleDiv = document.createElement('div');
+    articleDiv.className = 'article';
+    articleDiv.innerHTML = `
+        <h2>${article.title}</h2>
+        <p><strong>Author:</strong> ${article.author}</p>
+        <p><strong>Date:</strong> ${article.date}</p>
+        <div class="article-content">${article.content}</div>
+    `;
+    section.appendChild(articleDiv);
+}
 
-// Example:
-const articleLinks = document.querySelectorAll(".article-link");
 
-articleLinks.forEach((link, index) => {
-    link.addEventListener("click", () => {
-        populateArticleContent(index);
-    });
-});
