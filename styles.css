@@ -221,3 +221,7 @@ footer {
         padding: 40px;
     }
 }
+
+.article-content {
+    white-space: pre-wrap; /* Maintains whitespace and wraps text */
+}
