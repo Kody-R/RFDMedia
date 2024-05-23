@@ -33,3 +33,17 @@ section#articles {
 .article-content {
     white-space: pre-wrap; /* Maintains whitespace and wraps text */
 }
+
+button {
+    padding: 8px 16px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003DA5;
+}
+
