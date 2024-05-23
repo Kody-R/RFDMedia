@@ -71,6 +71,5 @@ function displayArticle(title) {
     section.appendChild(articleDiv);
     section.appendChild(backButton); // Append the back button after the article
 }
-}
 
 
