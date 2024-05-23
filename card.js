@@ -610,9 +610,9 @@ const rosterData = [
 
          // Check if the theme is 'action' and the actionImage is available
         if (theme === 'action' && selectedPlayer.actionImage) {
-            imagePath = 'G:/RFDMedia/NCAA/' + selectedPlayer.actionImage;
+            imagePath = 'pictures/' + selectedPlayer.actionImage;
         } else {
-            imagePath = 'G:/RFDMedia/pictures/Roster/' + selectedPlayer.image;
+            imagePath = 'pictures/' + selectedPlayer.image;
         }
 
     document.getElementById('playerImage').src = imagePath
