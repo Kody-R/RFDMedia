@@ -145,27 +145,79 @@ footer {
     text-decoration: underline;
 }
 
-/* Styles that apply when the screen width is 600px or larger */
-@media (min-width: 600px) {
-    .content {
-        display: flex;
-        justify-content: space-around;
+/* Mobile devices */
+@media (max-width: 480px) {
+    nav ul li {
+        display: block;
+        margin-right: 0;
     }
 
-    nav ul {
-        display: flex;
-        justify-content: space-evenly;
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .content {
+        padding: 10px;
     }
 }
 
-/* Styles for screens less than 600px wide */
-@media (max-width: 599px) {
-    nav ul {
-        display: block;
-        text-align: center;
+/* Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+    nav ul li {
+        display: inline;
     }
 
-    .menu-button {
-        display: block;
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+}
+
+/* Small desktops */
+@media (min-width: 769px) and (max-width: 1024px) {
+    nav ul li {
+        display: inline;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .content {
+        padding: 30px;
+    }
+}
+
+/* Large desktops */
+@media (min-width: 1025px) {
+    nav ul li {
+        display: inline;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .content {
+        padding: 40px;
     }
 }
