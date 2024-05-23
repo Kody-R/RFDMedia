@@ -2,7 +2,7 @@
 let articlesDictionary = {};
 
 window.onload = function() {
-    const articles = ['article1.txt', 'article2.txt', 'article3.txt']; // Add more files as needed
+    const articles = ['article1.txt', 'article2.txt']; // Add more files as needed
 
     articles.forEach(article => {
         fetch(`Articles/${article}`)
