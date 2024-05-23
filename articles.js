@@ -5,7 +5,7 @@ window.onload = function() {
     const articles = ['article1.txt', 'article2.txt', 'article3.txt']; // Add more files as needed
 
     articles.forEach(article => {
-        fetch(`./path/to/articles/${article}`)
+        fetch(`Articles/${article}`)
             .then(response => response.text())
             .then(text => {
                 const articleData = parseArticle(text);
