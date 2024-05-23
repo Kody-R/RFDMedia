@@ -3,16 +3,22 @@ let articlesDictionary = {};
 
 window.onload = function() {
     const articles = ['article1.txt', 'article2.txt']; // Add more files as needed
+    window.articlesDictionary = {}; // Define an empty dictionary to store articles
 
     articles.forEach(article => {
         fetch(`Articles/${article}`)
-            .then(response => response.text())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
             .then(text => {
                 const articleData = parseArticle(text);
-                // Store the article in the dictionary
-                articlesDictionary[articleData.title] = articleData;
+                articlesDictionary[articleData.title] = articleData; // Store article data in the dictionary
                 createArticleLink(articleData);
-            });
+            })
+            .catch(error => console.error('Error fetching the article:', error));
     });
 };
 
@@ -25,14 +31,27 @@ function parseArticle(text) {
     return { title, author, date, content };
 }
 
+ // Set up event delegation here
+ document.getElementById('articles').addEventListener('click', function(event) {
+    if (event.target.tagName === 'BUTTON') {
+        displayArticle(event.target.getAttribute('data-title'));
+    }
+});
+
 function createArticleLink(article) {
     const section = document.getElementById('articles');
     const articleDiv = document.createElement('div');
     articleDiv.className = 'article';
-    articleDiv.innerHTML = `<h2>${article.title}</h2><button onclick="displayArticle('${article.title.replace(/'/g, "\\'")}')">Read</button>`;
+    const button = document.createElement('button');
+    button.textContent = 'Read';
+    button.setAttribute('data-title', article.title); // Use custom data attribute to store title
+    const header = document.createElement('h2');
+    header.textContent = article.title;
+
+    articleDiv.appendChild(header);
+    articleDiv.appendChild(button);
     section.appendChild(articleDiv);
 }
-
 function displayArticle(title) {
     const article = articlesDictionary[title];
     const section = document.getElementById('articles');
@@ -47,3 +66,5 @@ function displayArticle(title) {
     `;
     section.appendChild(articleDiv);
 }
+
+
