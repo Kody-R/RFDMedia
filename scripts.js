@@ -58,11 +58,13 @@ document.addEventListener("DOMContentLoaded", function() {
             { date: "May 18", location: "Away", opponent: "Liberty", result: "W 12-8" },
             { date: "May 19", location: "Away", opponent: "Liberty", result: "W 10-1" },
             { date: "May 22", location: "Neutral", opponent: "Middle Tennessee", result: "W 8-2" },
-	        { date: "May 24", location: "Neutral", opponent: "Liberty", result: "L 2-6" },
-	        { date: "May 24", location: "Neutral", opponent: "Sam Houston", result: "W 5-3" },
-	        { date: "May 24", location: "Neutral", opponent: "Liberty", result: "W 8-7" },
-	        { date: "May 24", location: "Neutral", opponent: "Liberty", result: "W 6-5" },
-	        { date: "May 24", location: "Neutral", opponent: "Dallas Baptist", result: "L 10-17" },
+	    { date: "May 24", location: "Neutral", opponent: "Liberty", result: "L 2-6" },
+	    { date: "May 24", location: "Neutral", opponent: "Sam Houston", result: "W 5-3" },
+	    { date: "May 25", location: "Neutral", opponent: "Liberty", result: "W 8-7" },
+	    { date: "May 25", location: "Neutral", opponent: "Liberty", result: "W 6-5" },
+	    { date: "May 26", location: "Neutral", opponent: "Dallas Baptist", result: "L 10-17" },
+	    { date: "May 31", location: "Away", opponent: "Kansas St", result: "" },
+	    
 
     ];
 
@@ -76,7 +78,7 @@ function populateUpcomingGames(data) {
     }
 
     // Optionally limit the number of games to display for a smaller table
-    const gamesToShow = data.slice(Math.max(data.length - 5, 0));
+    const gamesToShow = data.slice(Math.max(data.length - 10, 0));
 
     gamesToShow.forEach(game => {
         const row = table.insertRow();
