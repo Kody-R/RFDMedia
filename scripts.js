@@ -190,20 +190,5 @@ if (fullScheduleTable) {
     }
 }
 
-fetch('articles.html')
-.then(response => response.text())
-.then(data => {
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(data, "text/html");
-    const articlesSection = doc.getElementById('articles');
-    const articleListDiv = document.getElementById('article-list');
 
-    // Assuming each article is wrapped in an element, like <div>
-    articlesSection.querySelectorAll('div').forEach(article => {
-        articleListDiv.appendChild(article);
-    });
-})
-.catch(error => {
-    console.error('Error fetching the articles:', error);
-});
 });
