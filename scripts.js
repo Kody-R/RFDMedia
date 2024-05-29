@@ -57,43 +57,35 @@ document.addEventListener("DOMContentLoaded", function() {
             { date: "May 17", location: "Away", opponent: "Liberty", result: "W 4-3" },
             { date: "May 18", location: "Away", opponent: "Liberty", result: "W 12-8" },
             { date: "May 19", location: "Away", opponent: "Liberty", result: "W 10-1" },
-            { date: "May 22", location: "CUSA", opponent: "Middle Tennessee", result: "W 8-2" },
-	    { date: "May 24", location: "CUSA", opponent: "Liberty", result: "" },
+            { date: "May 22", location: "Neutral", opponent: "Middle Tennessee", result: "W 8-2" },
+	        { date: "May 24", location: "Neutral", opponent: "Liberty", result: "L 2-6" },
+	        { date: "May 24", location: "Neutral", opponent: "Sam Houston", result: "W 5-3" },
+	        { date: "May 24", location: "Neutral", opponent: "Liberty", result: "W 8-7" },
+	        { date: "May 24", location: "Neutral", opponent: "Liberty", result: "W 6-5" },
+	        { date: "May 24", location: "Neutral", opponent: "Dallas Baptist", result: "L 10-17" },
 
     ];
 
-    // Define the number of latest games to display on the main page
-const latestGamesCount = 12;
+    populateUpcomingGames(scheduleData);
 
-// Get the index to start slicing from
-const startIndex = Math.max(scheduleData.length - latestGamesCount, 0);
+function populateUpcomingGames(data) {
+    const table = document.getElementById('schedule-table');
+    if (!table) {
+        console.error('Schedule table not found!');
+        return;
+    }
 
-// Slice the scheduleData array to get the last 10 games
-const latestGames = scheduleData.slice(startIndex);
+    // Optionally limit the number of games to display for a smaller table
+    const gamesToShow = data.slice(Math.max(data.length - 5, 0));
 
-// Populate partial schedule table on the main page
-const scheduleTable = document.getElementById("schedule-table");
-if (scheduleTable) {
-    // Create table header row
-    const headerRow = document.createElement("tr");
-    headerRow.innerHTML = `
-        <th>Date</th>
-        <th>Location</th>
-        <th>Opponent</th>
-        <th>Score</th>
-    `;
-    scheduleTable.appendChild(headerRow);
-
-    // Populate schedule data
-    latestGames.forEach(game => {
-        const row = document.createElement("tr");
-        row.innerHTML = `
-            <td>${game.date}</td>
-            <td>${game.location}</td>
-            <td>${game.opponent}</td>
-            <td class="${game.result.includes('W') ? 'win' : 'loss'}">${game.result}</td>
-        `;
-        scheduleTable.appendChild(row);
+    gamesToShow.forEach(game => {
+        const row = table.insertRow();
+        row.insertCell(0).innerText = game.date;
+        row.insertCell(1).innerText = game.location;
+        row.insertCell(2).innerText = game.opponent;
+        let resultCell = row.insertCell(3);
+        resultCell.innerText = game.result;
+        resultCell.className = game.result.startsWith('W') ? 'win' : 'loss';
     });
 }
 
@@ -196,35 +188,20 @@ if (fullScheduleTable) {
     }
 }
 
-    // Define articles directly in the JavaScript code
-    const articleData = [
-        { 
-            title: "Bulldogs Sweep Sam Houston State",
-            date: "April 30, 2024",
-            author: "Kody Roller",
-            content: "Dogs stay hot in C-USA play as they sweep the Bearkats in a grinder of a 3 game set."
-        },
-        { 
-            title: "Bulldogs Bash Aggies in 18-4 Rout",
-            date: "May 3, 2024",
-            author: "Kody Roller",
-            content: "Dogs clubbed 7 HRs in 7 Innings to run rule NMSU 18-4."
-        }
-																													
-    ];
+fetch('articles.html')
+.then(response => response.text())
+.then(data => {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(data, "text/html");
+    const articlesSection = doc.getElementById('articles');
+    const articleListDiv = document.getElementById('article-list');
 
-    // Populate article list on the articles page
-    const articleList = document.getElementById("article-list");
-    if (articleList) {
-        articleData.forEach(article => {
-            const articleDiv = document.createElement("div");
-            articleDiv.innerHTML = `
-                <h3>${article.title}</h3>
-                <p><em>${article.date} - ${article.author}</em></p>
-                <p>${article.content}</p>
-            `;
-            articleList.appendChild(articleDiv);
-        });
-    }
-
+    // Assuming each article is wrapped in an element, like <div>
+    articlesSection.querySelectorAll('div').forEach(article => {
+        articleListDiv.appendChild(article);
+    });
+})
+.catch(error => {
+    console.error('Error fetching the articles:', error);
+});
 });
