@@ -1,0 +1,68 @@
+﻿.wordle-container {
+    text-align: center;
+}
+
+.input-area {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+    .input-area input {
+        font-size: 18px;
+        padding: 5px;
+        width: 200px;
+    }
+
+    .input-area button {
+        font-size: 18px;
+        padding: 5px 10px;
+        margin-left: 10px;
+    }
+
+.dropdown {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    display: none;
+}
+
+    .dropdown div {
+        padding: 5px;
+        cursor: pointer;
+    }
+
+        .dropdown div:hover {
+            background-color: #f0f0f0;
+        }
+
+.results {
+    margin-top: 20px;
+}
+
+.result-item {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+    .result-item div {
+        margin: 0 10px;
+        padding: 5px 10px;
+        font-size: 18px;
+    }
+
+.correct {
+    background-color: green;
+    color: white;
+}
+
+.incorrect {
+    background-color: red;
+    color: white;
+}
+
+.hint {
+    margin-top: 20px;
+    font-size: 18px;
+}

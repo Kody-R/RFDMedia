@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LA Tech Wordle</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="worldle.css">
+</head>
+
+<header>
+    <h1>Louisiana Tech Bulldog Baseball</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="schedule.html">Full Schedule</a></li>
+            <li><a href="cusa.html">CUSA Standings</a></li>
+            <li><a href="roster.html">Roster</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="commitments.html">Commitments</a></li>
+            <li><a href="wordle.html.html">Wordle</a></li>
+            <li><a href="NCAABaseball.html">NCAA Baseball Cover</a></li>
+            <li><a href="card.html">Card Generator</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div class="wordle-container">
+        <h1>LA Tech Wordle</h1>
+        <div class="input-area">
+            <input type="text" id="guess-input" maxlength="20" placeholder="Type player's name here" />
+            <div class="dropdown" id="dropdown"></div>
+            <button id="submit-guess">Submit</button>
+        </div>
+        <div class="results" id="results"></div>
+        <div class="hint" id="hint"></div>
+        <button id="new-puzzle" style="display:none;">New Puzzle</button>
+    </div>
+    <script src="worldle.js"></script>
+</body>
+
+</html>
