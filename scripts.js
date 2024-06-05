@@ -63,9 +63,8 @@ document.addEventListener("DOMContentLoaded", function() {
 	    { date: "May 25", location: "Neutral", opponent: "Liberty", result: "W 8-7" },
 	    { date: "May 25", location: "Neutral", opponent: "Liberty", result: "W 6-5" },
 	    { date: "May 26", location: "Neutral", opponent: "Dallas Baptist", result: "L 10-17" },
-	    { date: "May 31", location: "Away", opponent: "Kansas St", result: "" },
-	    
-
+	    { date: "May 31", location: "Away", opponent: "Kansas St", result: "L 4-19" },
+	    { date: "June 1", location: "Away", opponent: "SEMO", result: "L 3-9" }
     ];
 
     populateUpcomingGames(scheduleData);
