@@ -8,15 +8,15 @@
 }
 
 .input-area {
-    position: relative;
+    position: relative; /* This allows absolute positioning within the container */
     margin-bottom: 20px;
-    width: 100%; /* Ensures the input area stretches to fit the container */
+    width: auto; /* Adjust width to fit content or specific width */
 }
 
 .input-area input {
     font-size: 18px;
     padding: 5px;
-    width: 200px; /* Adjusted to fit the specified width */
+    width: 200px; /* Specific width for the input box */
 }
 
 .input-area button {
@@ -30,10 +30,12 @@
     border: 1px solid #ccc;
     max-height: 150px;
     overflow-y: auto;
-    width: 215px; /* Match the input width plus some padding */
-    position: absolute;
-    top: 100%; /* Position directly below the input */
-    left: 0;
+    display: none; /* Initially hidden */
+    position: absolute; /* Positioned relative to its nearest positioned ancestor */
+    top: 100%; /* Below the input */
+    left: 0; /* Align with the left edge of the input field */
+    right: 0; /* Align with the right edge of the input field */
+    width: 100%; /* Full width to match the input box */
 }
 
 .dropdown div {
