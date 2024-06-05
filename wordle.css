@@ -3,26 +3,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* Start content at the top of the container */
     min-height: 100vh;
+    padding-top: 20px; /* Space from the top, adjust this value as needed */
 }
 
 .input-area {
-    position: relative; /* This allows absolute positioning within the container */
-    margin-bottom: 150px;
+    position: relative; /* Allows absolute positioning within the container */
+    margin-top: 20px; /* Reduced gap from the top */
     width: auto; /* Adjust width to fit content or specific width */
 }
 
 .input-area input {
-    font-size: 18px;
-    padding: 5px;
-    width: 200px; /* Specific width for the input box */
+    font-size: 24px; /* Increased font size */
+    padding: 10px; /* Increased padding for better visibility */
+    width: 300px; /* Increased width for better interaction */
 }
 
 .input-area button {
-    font-size: 18px;
-    padding: 5px 10px;
-    margin-left: 10px;
+    font-size: 24px; /* Match font size with the input */
+    padding: 10px 15px;
+    margin-left: 15px;
 }
 
 .dropdown {
@@ -39,7 +40,7 @@
 }
 
 .dropdown div {
-    padding: 5px;
+    padding: 10px; /* Increased padding for better readability */
     cursor: pointer;
 }
 
@@ -54,13 +55,13 @@
 .result-item {
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px; /* Increased margin for better spacing */
 }
 
 .result-item div {
-    margin: 0 10px;
-    padding: 5px 10px;
-    font-size: 18px;
+    margin: 0 15px; /* Increased margin for spacing */
+    padding: 10px 15px; /* Increased padding for better readability */
+    font-size: 20px; /* Increased font size */
 }
 
 .correct {
@@ -74,14 +75,14 @@
 }
 
 .hint {
-    margin-top: 20px;
-    font-size: 18px;
+    margin-top: 30px; /* Increased top margin */
+    font-size: 20px; /* Increased font size */
 }
 
 #new-puzzle {
     display: flex; /* Enable flex to center button */
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 15px 25px; /* Increased padding for better interaction */
+    font-size: 18px; /* Slightly increased font size */
     cursor: pointer;
-    margin-top: 20px; /* Space from the last element */
+    margin-top: 30px; /* Increased space from the last element */
 }
