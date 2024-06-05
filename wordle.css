@@ -4,13 +4,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh; /* This will take at least the full height of the viewport */
-    margin-top: -50px; /* Adjust this value as needed to move the container higher */
+    min-height: 100vh; 
+    margin-top: -50px; 
 }
 
 .input-area {
     position: relative; /* This allows absolute positioning within the container */
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     width: auto; /* Adjust width to fit content or specific width */
 }
 
