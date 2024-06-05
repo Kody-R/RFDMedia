@@ -1,43 +1,52 @@
-﻿.wordle-container {
+.wordle-container {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* This will take at least the full height of the viewport */
 }
 
 .input-area {
     position: relative;
     margin-bottom: 20px;
+    width: 100%; /* Ensures the input area stretches to fit the container */
 }
 
-    .input-area input {
-        font-size: 18px;
-        padding: 5px;
-        width: 200px;
-    }
+.input-area input {
+    font-size: 18px;
+    padding: 5px;
+    width: 200px; /* Adjusted to fit the specified width */
+}
 
-    .input-area button {
-        font-size: 18px;
-        padding: 5px 10px;
-        margin-left: 10px;
-    }
+.input-area button {
+    font-size: 18px;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
 
 .dropdown {
     background-color: #fff;
     border: 1px solid #ccc;
     max-height: 150px;
     overflow-y: auto;
-    display: none;
+    width: 215px; /* Match the input width plus some padding */
+    position: absolute;
+    top: 100%; /* Position directly below the input */
+    left: 0;
 }
 
-    .dropdown div {
-        padding: 5px;
-        cursor: pointer;
-    }
+.dropdown div {
+    padding: 5px;
+    cursor: pointer;
+}
 
-        .dropdown div:hover {
-            background-color: #f0f0f0;
-        }
+.dropdown div:hover {
+    background-color: #f0f0f0;
+}
 
-.results {
-    margin-top: 20px;
+.results, .hint {
+    width: 100%; /* Full width for better alignment */
 }
 
 .result-item {
@@ -46,11 +55,11 @@
     margin-bottom: 10px;
 }
 
-    .result-item div {
-        margin: 0 10px;
-        padding: 5px 10px;
-        font-size: 18px;
-    }
+.result-item div {
+    margin: 0 10px;
+    padding: 5px 10px;
+    font-size: 18px;
+}
 
 .correct {
     background-color: green;
@@ -65,4 +74,12 @@
 .hint {
     margin-top: 20px;
     font-size: 18px;
+}
+
+#new-puzzle {
+    display: flex; /* Enable flex to center button */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px; /* Space from the last element */
 }
