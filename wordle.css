@@ -10,7 +10,6 @@
 
 .input-area {
     position: relative; /* Allows absolute positioning within the container */
-    margin-top: 20px; /* Reduced gap from the top */
     width: auto; /* Adjust width to fit content or specific width */
 }
 
@@ -60,7 +59,6 @@
 
 .result-item div {
     margin: 0 15px; /* Increased margin for spacing */
-    padding: 10px 15px; /* Increased padding for better readability */
     font-size: 20px; /* Increased font size */
 }
 
