@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh; /* This will take at least the full height of the viewport */
+    margin-top: -50px; /* Adjust this value as needed to move the container higher */
 }
 
 .input-area {
