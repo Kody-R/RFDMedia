@@ -1,0 +1,59 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    cursor: pointer; /* Change cursor to pointer to indicate that the header is clickable */
+    position: relative; /* Positioning context for the pseudo-elements used for arrows */
+}
+
+th:hover {
+    background-color: #e2e2e2; /* Slightly darker background on hover to indicate interactivity */
+}
+
+/* Add pseudo-elements for sort indicators */
+th:after {
+    content: ''; /* Start with an empty content, the specific arrows are added based on class */
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8em;
+    color: #666;
+}
+
+/* Sorting arrows, using Unicode characters */
+th.headerSortDown:after {
+    content: '\25BE'; /* Arrow pointing down when the column is sorted in descending order */
+}
+
+th.headerSortUp:after {
+    content: '\25B4'; /* Arrow pointing up when the column is sorted in ascending order */
+}
+
+.tablinks {
+    background-color: #003DA5; /* Theme blue background */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.tablinks:hover {
+    background-color: #002875; /* A darker blue for hover */
+}
+

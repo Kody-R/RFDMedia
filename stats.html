@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Baseball Stats</title>
+<link rel="stylesheet" href="stats.css">
+<link rel="stylesheet" href="styles.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
+
+</head>
+<body> <header>
+    <h1>Louisiana Tech Bulldog Baseball</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="schedule.html">Full Schedule</a></li>
+            <li><a href="cusa.html">CUSA Standings</a></li>
+            <li><a href="roster.html">Roster</a></li>
+            <li><a href="stats.html">Statistics</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="commitments.html">Commitments</a></li>
+            <li><a href="wordle.html">Wordle</a></li>
+            <li><a href="NCAABaseball.html">NCAA Baseball Cover</a></li>
+            <li><a href="card.html">Card Generator</a></li>
+        </ul>
+    </nav>
+</header>
+
+<button class="tablinks" id="showHitting">Hitting Stats</button>
+<button class="tablinks" id="showPitching">Pitching Stats</button>
+<button class="tablinks" id="showFielding">Fielding Stats</button>
+<button class="tablinks" id="showAdvancedHitting">Advanced Hitting Stats</button>
+<button class="tablinks" id="showAdvancedPitching">Advanced Pitching Stats</button>
+
+
+<!-- <button id="showHitting">Hitting Stats</button>
+<button id="showPitching">Pitching Stats</button>
+<button id="showFielding">Fielding Stats</button>
+<button id="showAdvancedHitting">Advanced Hitting Stats</button>
+<button id="showAdvancedPitching">Advanced Pitching Stats</button>
+ -->
+
+<div id="hittingStats" class="tabcontent">
+    <table id="hittingTable" class="tablesorter">
+        <thead>
+            <tr>
+                <th title="Number">#</th>
+                <th title="Name">Player</th>
+                <th title="Batting Average">AVG</th>
+                <th title="Games Played - Games Started">GP-GS</th>
+                <th title="At Bats">AB</th>
+                <th title="Runs Scored">R</th>
+                <th title="Hits">H</th>
+                <th title="Doubles">2B</th>
+                <th title="Triples">3B</th>
+                <th title="Home Runs">HR</th>
+                <th title="Runs Batted in">RBI</th>
+                <th title="Total Bases">TB</th>
+                <th title="Slugging Percentage">SLG%</th>
+                <th title="Base on Balls (Walks)">BB</th>
+                <th title="Hit by Pitch">HBP</th>
+                <th title="Strikeouts">SO</th>
+                <th title="Grounded into Double Play">GDP</th>
+                <th title="On-Base Percentage">OB%</th>
+                <th title="Sacrifice Fly">SF</th>
+                <th title="Sacrifice Hit">SH</th>
+                <th title="Stolen Bases - Attempts">SB-ATT</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows of hitting stats here -->
+        </tbody>
+    </table>
+</div>
+
+<div id="pitchingStats" class="tabcontent">
+    <table id="pitchingTable" class="tablesorter">
+        <thead>
+            <tr>
+                <th title="Number">#</th>
+                <th title="Name">Player</th>
+                <th title="Earned Run Average">ERA</th>
+                <th title="Wins-Losses">W-L</th>
+                <th title="Appearances">APP</th>
+                <th title="Games Started">GS</th>
+                <th title="Complete Games">CG</th>
+                <th title="Shutouts">SHO</th>
+                <th title="Saves">SV</th>
+                <th title="Innings Pitched">IP</th>
+                <th title="Hits Allowed">H</th>
+                <th title="Runs Allowed">R</th>
+                <th title="Earned Runs">ER</th>
+                <th title="Bases on Balls (Walks)">BB</th>
+                <th title="Strikeouts">SO</th>
+                <th title="Doubles Allowed">2B</th>
+                <th title="Triples Allowed">3B</th>
+                <th title="Home Runs Allowed">HR</th>
+                <th title="Batting Average Against">B/AVG</th>
+                <th title="Wild Pitches">WP</th>
+                <th title="Hit by Pitch">HP</th>
+                <th title="Balks">BK</th>
+                <th title="Sacrifice Flies Allowed">SFA</th>
+                <th title="Sacrifice Hits Allowed">SHA</th>
+            </tr>
+        </thead>
+        
+        
+        <tbody>
+            <!-- Rows of pitching stats here -->
+        </tbody>
+    </table>
+</div>
+
+<div id="fieldingStats" class="tabcontent">
+    <table id="fieldingTable" class="tablesorter">
+        <thead>
+            <tr>
+                <th title="Number">#</th>
+                <th title="Name">Player</th>
+                <th title="Chances">C</th>
+                <th title="Putouts">PO</th>
+                <th title="Assists">A</th>
+                <th title="Errors">E</th>
+                <th title="Fielding Percentage">FLD%</th>
+                <th title="Double Plays">DP</th>
+                <th title="Stolen Base Attempts">SBA</th>
+                <th title="Caught Stealing">CS</th>
+                <th title="Stolen Base Attempt Percentage">SBA%</th>
+                <th title="Passed Balls">PB</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows of fielding stats here -->
+        </tbody>
+    </table>
+</div>
+
+<div id="advancedHittingStats" class="tabcontent">
+    <table id="advHittingTable" class="tablesorter">
+        <thead>
+            <tr>
+                <th title="Number">#</th>
+                <th title="Name">Player</th>
+                <th title="On-Base Plus Slugging">OPS</th>
+                <th title="Strikeout Percentage">SO%</th>
+                <th title="Base on Ball (Walks) Percentage">BB%</th>
+                <th title="Runs Created">RC</th>
+                <th title="Isolated Power">ISO</th>
+                <th title="Batting Average on Balls in Play">BABIP</th>
+                <th title="Weighted On-Base Average">wOBA</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows of fielding stats here -->
+        </tbody>
+    </table>
+</div>
+
+
+<div id="advancedPitchingStats" class="tabcontent">
+    <table id="advPitchingTable" class="tablesorter">
+        <thead>
+            <tr>
+                <th title="Number">#</th>
+                <th title="Name">Player</th>
+                <th title="Fielding Independent Pitching">FIP</th>
+                <th title="Walks & Hits Per Inning">WHIP</th>
+                <th title="Strikeout Percentage">K%/th>
+                <th title="Base on Ball (Walks) Percentage">BB%</th>
+                <th title="Left On Base Percentage">LOB%</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows of fielding stats here -->
+        </tbody>
+    </table>
+</div>
+
+<footer>
+    <p>&copy; 2024 Louisiana Tech Bulldog Baseball</p>
+</footer>
+
+<script src="stats.js"></script>
+</body>
+</html>
