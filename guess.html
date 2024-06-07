@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RFD Media - Team Roster</title>
-    <link rel="stylesheet" href="styles.css"> <!-- If you have a CSS file -->
+    <title>Guess the Player - La Tech Baseball</title>
+    <link rel="stylesheet" href="guess.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Tech Baseball Roster</h1>
+        <h1>Guess the Player</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -25,31 +26,24 @@
             </ul>
         </nav>
     </header>
+    <div id="game-container">
+        <img id="player-image" src="" alt="Player Image">
+        <div class="input-group">
+            <input id="guess-input" list="player-names" placeholder="Enter player name">
+            <datalist id="player-names">
+                <!-- Options will be populated by JavaScript -->
+            </datalist>
+            <button id="submit-guess">Submit Guess</button>
+            <button id="next-round-button" style="display: none;">Next Round</button>
 
-    <section id="roster">
-        <table id="roster_table" class="roster-style">
-            <tr>
-                <th>Number</th>
-                <th>Name</th>
-                <th>Position</th>
-                <th>Height</th>
-                <th>Class</th>
-                <th>Hometown</th>
-                <th>High School</th>
-                <th>Previous School</th>
-                <th>Twitter</th>
-                <th>Profile</th>
-            </tr>
-            <!-- Table rows will be dynamically inserted here -->
-        </table>
-    </section>
-    
-    
-
+        </div>
+        <div id="feedback"></div>
+        <div id="score">Score: 0</div>
+        <div id="round">Round: 1/10</div>
+    </div>
     <footer>
-        <p>&copy; 2024 RFD Media</p>
+        <p>© 2024 RFD Media</p>
     </footer>
-
-    <script src="roster.js"></script> <!-- Make sure to include your JavaScript file -->
+    <script src="guess.js"></script>
 </body>
 </html>
