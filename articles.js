@@ -17,20 +17,27 @@ function parseArticle(text) {
 
 
 function loadArticles() {
-    const articles = ['article1.txt', 'article2.txt']; // Update with actual file names
     const section = document.getElementById('articles');
     section.innerHTML = ''; // Clear the section first
 
-    articles.forEach(article => {
-        fetch(`Articles/${article}`)
-            .then(response => response.text())
-            .then(text => {
-                const articleData = parseArticle(text);
-                articlesDictionary[articleData.title] = articleData;
-                createArticleLink(articleData);
+    fetch('Articles/') // Fetch the list of files in the folder
+        .then(response => response.text())
+        .then(text => {
+            const fileNames = text.split('\n'); // Assuming each file name is on a new line
+            const txtFiles = fileNames.filter(fileName => fileName.endsWith('.txt')); // Filter out .txt files
+
+            txtFiles.forEach(txtFile => {
+                fetch(`Articles/${txtFile}`)
+                    .then(response => response.text())
+                    .then(text => {
+                        const articleData = parseArticle(text);
+                        articlesDictionary[articleData.title] = articleData;
+                        createArticleLink(articleData);
+                    });
             });
-    });
+        });
 }
+
 
 document.getElementById('articles').addEventListener('click', function(event) {
     if (event.target.tagName === 'BUTTON') {
