@@ -1633,11 +1633,11 @@ const AdvPitching = [
     {
         "Number": "46",
         "Player": "Hayden Harmon",
-        "FIP": "0",
-        "WHIP": "0",
-        "K%": "0",
-        "BB%": "0",
-        "LOB%": "0"
+        "FIP": "-",
+        "WHIP": "-",
+        "K%": "-",
+        "BB%": "-",
+        "LOB%": "-"
     }
 ]
 
