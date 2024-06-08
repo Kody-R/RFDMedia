@@ -20,7 +20,7 @@ function loadArticles() {
     const section = document.getElementById('articles');
     section.innerHTML = ''; // Clear the section first
 
-    fetch('/Articles') // Fetch the list of files in the folder
+    fetch('/Articles/') // Fetch the list of files in the folder
         .then(response => response.text())
         .then(text => {
             const fileNames = text.split('\n'); // Assuming each file name is on a new line
