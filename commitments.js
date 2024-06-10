@@ -22,6 +22,11 @@
             { name: "Caleb Hall", position: "Right Handed Pitcher", school: "Meridian CC", hometown: "Hamilton, MS", twitter: "@Caleb1Hall", tlink: "https://twitter.com/Caleb1Hall", link: "https://www.mcceagles.com/sports/bsb/2023-24/bios/hall_caleb_b3s1" },
             { name: "Rhett Ketchum", position: "Outfielder", school: "Meridian CC", hometown: "West Point, MS", twitter: "@KetchumRhett", tlink: "https://twitter.com/KetchumRhett", link: "https://www.mcceagles.com/sports/bsb/2023-24/bios/ketchum_rhett_d9gp" }
         ],
+
+        "2024 Transfers": [
+            { name: "Zachary Mazoch", position: "Catcher", school: "Baylor", hometown: "Georgetown, TX", twitter: "@ZacharyMazoch2", tlink: "https://twitter.com/ZacharyMazoch2", link: "https://baylorbears.com/sports/baseball/roster/zach-mazoch/13003" },
+        ],
+       
         "2025 HS": [
             { name: "Shelton Harville Jr.", position: "Right Handed Pitcher", school: "Captain Shreve HS", hometown: "Keithville, LA" , twitter: "@SheltonHarvJr", tlink: "https://twitter.com/SheltonHarvJr", link: "https://www.prepbaseballreport.com/profiles/LA/Shelton--Harville--4897126350"},
             { name: "Easton Sanders", position: "1st Baseman / Outfielder / Right Handed Pitcher", school: "Glenbrook HS", hometown: "Minden, LA", twitter: "@easton_sanders", tlink: "https://twitter.com/easton_sanders", link: "https://www.prepbaseballreport.com/profiles/LA/Easton-Sanders-9348257160" },
@@ -40,6 +45,7 @@
         // Populate tables with data for each class
         generateTableRows(commitmentsData["2024 HS"], "table_2024_HS");
         generateTableRows(commitmentsData["2024 JUCO"], "table_2024_JUCO");
+        generateTableRows(commitmentsData["2024 Transfers"], "table_2024_Transfers");
         generateTableRows(commitmentsData["2025 HS"], "table_2025_HS");
         
         // Initially open the first tab
