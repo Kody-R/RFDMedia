@@ -1491,6 +1491,9 @@ const AdvPitching = [
         "Player": "Sam Brodersen",
         "FIP": "2.64",
         "WHIP": "1.27",
+        "HR/9": "0.80",
+        "K/9":"15.43",
+        "BB/9":"6.43",
         "K%": "36.22",
         "BB%": "15.09",
         "LOB%": "72.72"
@@ -1500,6 +1503,9 @@ const AdvPitching = [
         "Player": "Ethan Bates",
         "FIP": "2.77",
         "WHIP": "1.10",
+        "HR/9": "0.20",
+        "K/9":"10.48",
+        "BB/9":"4.03",
         "K%": "28.00",
         "BB%": "10.99",
         "LOB%": "75.00"
@@ -1509,6 +1515,9 @@ const AdvPitching = [
         "Player": "Grant Hubka",
         "FIP": "3.82",
         "WHIP": "1.37",
+        "HR/9": "1.41",
+        "K/9":"10.68",
+        "BB/9":"5.34",
         "K%": "26.61",
         "BB%": "13.63",
         "LOB%": "75.22"
@@ -1518,6 +1527,9 @@ const AdvPitching = [
         "Player": "Connor Nation",
         "FIP": "4.28",
         "WHIP": "1.44",
+        "HR/9": "1.62",
+        "K/9":"8.54",
+        "BB/9":"2.77",
         "K%": "21.88",
         "BB%": "7.29",
         "LOB%": "77.27"
@@ -1527,6 +1539,9 @@ const AdvPitching = [
         "Player": "Luke Nichols",
         "FIP": "4.28",
         "WHIP": "1.31",
+        "HR/9": "0.80",
+        "K/9":"9.38",
+        "BB/9":"3.32",
         "K%": "21.16",
         "BB%": "7.78",
         "LOB%": "74.62"
@@ -1536,6 +1551,9 @@ const AdvPitching = [
         "Player": "Brenton Thiels",
         "FIP": "5.10",
         "WHIP": "2.00",
+        "HR/9": "0.00",
+        "K/9":"9.00",
+        "BB/9":"9.00",
         "K%": "7.69",
         "BB%": "7.69",
         "LOB%": "90.00"
@@ -1545,6 +1563,9 @@ const AdvPitching = [
         "Player": "Jacob Havern",
         "FIP": "4.23",
         "WHIP": "1.50",
+        "HR/9": "0.33",
+        "K/9":"9.21",
+        "BB/9":"4.28",
         "K%": "19.05",
         "BB%": "8.84",
         "LOB%": "80.49"
@@ -1554,6 +1575,9 @@ const AdvPitching = [
         "Player": "Nate Crider",
         "FIP": "4.38",
         "WHIP": "1.37",
+        "HR/9": "1.76",
+        "K/9":"7.63",
+        "BB/9":"4.70",
         "K%": "22.41",
         "BB%": "13.79",
         "LOB%": "79.17"
@@ -1563,6 +1587,9 @@ const AdvPitching = [
         "Player": "Blake Hooks",
         "FIP": "4.78",
         "WHIP": "1.56",
+        "HR/9": "0.00",
+        "K/9":"8.44",
+        "BB/9":"5.21",
         "K%": "19.35",
         "BB%": "10.92",
         "LOB%": "77.78"
@@ -1572,6 +1599,9 @@ const AdvPitching = [
         "Player": "Greg Martinez",
         "FIP": "4.46",
         "WHIP": "1.58",
+        "HR/9": "1.89",
+        "K/9":"8.53",
+        "BB/9":"5.21",
         "K%": "19.57",
         "BB%": "11.96",
         "LOB%": "81.43"
@@ -1581,6 +1611,9 @@ const AdvPitching = [
         "Player": "Reed Smith",
         "FIP": "4.56",
         "WHIP": "1.42",
+        "HR/9": "1.76",
+        "K/9":"9.15",
+        "BB/9":"2.11",
         "K%": "20.24",
         "BB%": "4.67",
         "LOB%": "77.68"
@@ -1590,6 +1623,9 @@ const AdvPitching = [
         "Player": "Issac Crabb",
         "FIP": "4.47",
         "WHIP": "1.68",
+        "HR/9": "3.24",
+        "K/9":"8.65",
+        "BB/9":"6.48",
         "K%": "21.62",
         "BB%": "16.22",
         "LOB%": "70.00"
@@ -1599,6 +1635,9 @@ const AdvPitching = [
         "Player": "Caden Copeland",
         "FIP": "5.35",
         "WHIP": "1.75",
+        "HR/9": "0.30",
+        "K/9":"9.41",
+        "BB/9":"6.48",
         "K%": "23.66",
         "BB%": "10.80",
         "LOB%": "72.22"
@@ -1608,6 +1647,9 @@ const AdvPitching = [
         "Player": "Turner Swistak",
         "FIP": "4.94",
         "WHIP": "1.60",
+        "HR/9": "2.38",
+        "K/9":"9.00",
+        "BB/9":"2.89",
         "K%": "18.35",
         "BB%": "5.66",
         "LOB%": "66.00"
@@ -1617,6 +1659,9 @@ const AdvPitching = [
         "Player": "Ryan Harland",
         "FIP": "5.85",
         "WHIP": "1.73",
+        "HR/9": "2.08",
+        "K/9":"7.62",
+        "BB/9":"4.50",
         "K%": "16.18",
         "BB%": "9.56",
         "LOB%": "71.05"
@@ -1626,6 +1671,9 @@ const AdvPitching = [
         "Player": "Reece Tarini",
         "FIP": "5.67",
         "WHIP": "1.50",
+        "HR/9": "9.00",
+        "K/9":"4.50",
+        "BB/9":"4.50",
         "K%": "9.09",
         "BB%": "9.09",
         "LOB%": "75.00"
@@ -1635,6 +1683,9 @@ const AdvPitching = [
         "Player": "Hayden Harmon",
         "FIP": "-",
         "WHIP": "-",
+        "HR/9": "-",
+        "K/9":"-",
+        "BB/9":"-",
         "K%": "-",
         "BB%": "-",
         "LOB%": "-"
@@ -1662,7 +1713,7 @@ $(document).ready(function() {
     const hittingFields = ["#", "Player", "AVG", "GP-GS", "AB", "R", "H", "2B", "3B", "HR", "RBI", "TB", "SLG%", "BB", "HBP", "SO", "GDP", "OB%", "SF", "SH", "SB-ATT"];
     const advHittingFields = ["Number","Player","OPS","SO%","BB%","RC","ISO","BABIP","wOBA"];
     const pitchingFields = ["#", "Player", "ERA", "W-L", "APP", "GS", "CG", "SHO", "SV", "IP", "H", "R", "ER", "BB", "SO", "2B", "3B", "HR", "B/AVG", "WP", "HP", "BK", "SFA", "SHA"];
-    const advPitchingFields = ["Number","Player","FIP","WHIP","K%","BB%","LOB%"]
+    const advPitchingFields = ["Number","Player","FIP","WHIP","HR/9","K/9","BB/9","K%","BB%","LOB%"]
     const fieldingFields = ["#", "Player", "C","PO", "A", "E", "FLD%", "DP", "SBA", "CSB", "SBA%", "PB"];
 
     // Populate tables
@@ -1701,60 +1752,6 @@ $(document).ready(function() {
         // Optionally, trigger the first tab to be open on page load
         $('#showHitting').trigger('click');
     });
-    
-
-    /* $(document).ready(function() {
-        $(".tablesorter").tablesorter({
-            theme: 'blue',
-            widthFixed: true,
-            widgets: ['zebra', 'filter']
-        });
-    
-        // Event handlers for basic stats categories
-        $('#showHitting').click(function() {
-            $('#hittingStats').show();
-            $('#pitchingStats').hide();
-            $('#fieldingStats').hide();
-            $('#advancedHittingStats').hide();
-            $('#advancedPitchingStats').hide();
-        });
-    
-        $('#showPitching').click(function() {
-            $('#pitchingStats').show();
-            $('#hittingStats').hide();
-            $('#fieldingStats').hide();
-            $('#advancedHittingStats').hide();
-            $('#advancedPitchingStats').hide();
-        });
-    
-        $('#showFielding').click(function() {
-            $('#fieldingStats').show();
-            $('#hittingStats').hide();
-            $('#pitchingStats').hide();
-            $('#advancedHittingStats').hide();
-            $('#advancedPitchingStats').hide();
-        });
-    
-        // Event handlers for advanced stats categories
-        $('#showAdvancedHitting').click(function() {
-            $('#advancedHittingStats').show();
-            $('#hittingStats').hide();
-            $('#pitchingStats').hide();
-            $('#fieldingStats').hide();
-            $('#advancedPitchingStats').hide();
-        });
-    
-        $('#showAdvancedPitching').click(function() {
-            $('#advancedPitchingStats').show();
-            $('#hittingStats').hide();
-            $('#pitchingStats').hide();
-            $('#fieldingStats').hide();
-            $('#advancedHittingStats').hide();
-        });
-    
-        // Initially show basic hitting stats when the page loads
-        $('#showHitting').trigger('click');
-    }); */
     
     
 });
