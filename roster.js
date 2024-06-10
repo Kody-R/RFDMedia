@@ -416,7 +416,7 @@ const rosterData = [
         height: "6-2",
         class: "Sr.",
         hometown: "Lufkin, TX",
-        High_School: "Lukin Hudson High School",
+        High_School: "Lufkin Hudson High School",
         Prev_School: "Tyler JC",
         twitter: "Reed_smith44",
         LA_Tech_Sports: "https://latechsports.com/sports/baseball/roster/reed-smith/12867"
@@ -436,7 +436,7 @@ const rosterData = [
     { 
         number: 44,
         name: "Karson Evans",
-        position: "INF/1B",
+        position: "C/1B",
         height: "6-2",
         class: "So.",
         hometown: "Taylorsville, MS",
