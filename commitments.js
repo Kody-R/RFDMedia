@@ -24,7 +24,13 @@
         ],
 
         "2024 Transfers": [
-            { name: "Zachary Mazoch", position: "Catcher", school: "Baylor", hometown: "Georgetown, TX", twitter: "@ZacharyMazoch2", tlink: "https://twitter.com/ZacharyMazoch2", link: "https://baylorbears.com/sports/baseball/roster/zach-mazoch/13003" },
+            { name: "Zachary Mazoch", position: "Catcher/ 1st Baseman", school: "Baylor", hometown: "Georgetown, TX", twitter: "@ZacharyMazoch2", tlink: "https://twitter.com/ZacharyMazoch2", link: "https://baylorbears.com/sports/baseball/roster/zach-mazoch/13003" },
+           { name: "Logan Forsythe", position: "Right Handed Pitcher", school: "Mississippi State", hometown: "D' Iberville, MS", twitter: "@LoganForsythe1", tlink: "https://x.com/LoganForsythe1", link: "https://hailstate.com/sports/baseball/roster/logan-forsythe/10211" },
+           { name: "Zeb Ruddell", position: "Outfielder", school: "LSU", hometown: "Monroe, LA", twitter: "@ZebRuddell", tlink: "https://twitter.com/ZebRuddell", link: "https://lsusports.net/sports/bsb/roster/season/2024/player/zeb-ruddell/" },
+           { name: "Eli Berch", position: "Catcher", school: "Ole Miss / Chipola College", hometown: "Bixby, OK", twitter: "@EliBerch", tlink: "https://twitter.com/EliBerch", link: "https://olemisssports.com/sports/baseball/roster/eli-berch/5247" },
+           { name: "Noah Magee", position: "Right Handed Pitcher", school: "Delta State", hometown: "Mount Olive, MS", twitter: "@noah_magee_2", tlink: "https://twitter.com/noah_magee_2", link: "https://gostatesmen.com/sports/baseball/roster/noah-magee/6957" },
+           { name: "Kade Parker", position: "Right Handed Pitcher", school: "Stephen F Austin / Copiah Lincoln Community College", hometown: "West Monroe, LA", twitter: "KadeParker11", tlink: "https://x.com/KadeParker11", link: "https://sfajacks.com/sports/baseball/roster/kade-parker/5601" },
+           { name: "Garrison Berkley", position: "Outfielder", school: "UT Arlington / TCU", hometown: "Aledo, TX", twitter: "@garrison_berk", tlink: "https://twitter.com/garrison_berk", link: "https://utamavs.com/sports/baseball/roster/garrison-berkley/14188" },
         ],
        
         "2025 HS": [
