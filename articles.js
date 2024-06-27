@@ -73,7 +73,7 @@ function displayArticle(title) {
     const article = articleFiles.find(article => article.title === title);
     const section = document.getElementById('articles');
     section.innerHTML = `
-        <h2>${article.title}</h2>
+        <h2>${article.title} </h2>
         <p><strong>Author:</strong> ${article.author}</p>
         <p><strong>Date:</strong> ${article.date}</p>
         <div class="article-content">${article.content}</div>
