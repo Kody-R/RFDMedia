@@ -19,7 +19,7 @@ function loadArticles() {
     const section = document.getElementById('articles');
     section.innerHTML = '<p>Loading articles...</p>'; // Provide feedback while loading
 
-    const articlePath = 'Articles/';
+    const articlePath = 'articles/';
 
     fetch(articlePath)
         .then(response => response.text())
