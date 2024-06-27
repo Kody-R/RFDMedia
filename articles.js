@@ -5,9 +5,10 @@ const articleFiles = [
     'Articles/article3.txt'
 ];
 
-window.onload = function() {
+document.addEventListener('DOMContentLoaded', function() {
     loadArticles();
-};
+    addEventListenerToArticles();
+});
 
 function parseArticle(text) {
     const lines = text.split('\n');
@@ -42,13 +43,15 @@ function loadArticles() {
     });
 }
 
-document.getElementById('articles').addEventListener('click', function(event) {
-    if (event.target.tagName === 'BUTTON' && event.target.classList.contains('read-button')) {
-        displayArticle(event.target.getAttribute('data-title'));
-    } else if (event.target.classList.contains('back-button')) {
-        loadArticles();
-    }
-});
+function addEventListenerToArticles() {
+    const articlesSection = document.getElementById('articles');
+    articlesSection.addEventListener('click', function(event) {
+        if (event.target && event.target.matches('.read-button')) {
+            const title = event.target.getAttribute('data-title');
+            displayArticle(title);
+        }
+    });
+}
 
 function createArticleElement(article) {
     const section = document.getElementById('articles');
@@ -58,8 +61,8 @@ function createArticleElement(article) {
     header.textContent = article.title;
     const button = document.createElement('button');
     button.textContent = 'Read';
+    button.classList.add('read-button');  // Ensure this class is added
     button.setAttribute('data-title', article.title);
-    button.classList.add('read-button');
 
     articleDiv.appendChild(header);
     articleDiv.appendChild(button);
@@ -67,7 +70,7 @@ function createArticleElement(article) {
 }
 
 function displayArticle(title) {
-    const article = articlesDictionary[title];
+    const article = articleFiles.find(article => article.title === title);
     const section = document.getElementById('articles');
     section.innerHTML = `
         <h2>${article.title}</h2>
