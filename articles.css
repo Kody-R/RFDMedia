@@ -1,9 +1,49 @@
 
+:root {
+    --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --color-primary: #0056b3;
+    --color-secondary: #003DA5;
+    --color-text: #333;
+    --color-background: #f4f4f4;
+    --color-article-background: #ffffff;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 /* Section for articles */
 section#articles {
     margin: 20px auto;
-    max-width: 800px; /* Restricts the width of the section for better readability */
-    background: white;
+    max-width: 800px;
+    background: var(--color-article-background);
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -15,13 +55,14 @@ section#articles {
 }
 
 .article h2 {
-    color: #003DA5;
+    color: var(--color-secondary);
     font-size: 24px;
 }
 
 .article p {
     margin: 10px 0;
     font-size: 18px;
+    line-height: 1.6;
 }
 
 /* Styling for metadata like author and date */
@@ -29,21 +70,21 @@ section#articles {
     color: #555;
 }
 
-
 .article-content {
-    white-space: pre-wrap; /* Maintains whitespace and wraps text */
+    white-space: pre-wrap;
+    line-height: 1.6;
 }
 
 button {
     padding: 8px 16px;
-    background-color: #0056b3;
+    background-color: var(--color-secondary);
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #003DA5;
+    background-color: #004080;
 }
-
