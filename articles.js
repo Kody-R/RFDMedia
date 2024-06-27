@@ -1,8 +1,11 @@
-// Dictionary to store articles
-let articlesDictionary = {};
+// Static list of article file paths
+const articleFiles = [
+    'Articles/article1.txt',
+    'Articles/article2.txt',
+    'Articles/article3.txt'
+];
 
 window.onload = function() {
-    window.articlesDictionary = {};
     loadArticles();
 };
 
@@ -19,34 +22,24 @@ function loadArticles() {
     const section = document.getElementById('articles');
     section.innerHTML = '<p>Loading articles...</p>'; // Provide feedback while loading
 
-    const articlePath = 'articles/';
+    if (articleFiles.length === 0) {
+        section.innerHTML = '<p>No articles available.</p>';
+        return;
+    }
 
-    fetch(articlePath)
-        .then(response => response.text())
-        .then(text => {
-            const fileNames = text.split('\n');
-            const txtFiles = fileNames.filter(fileName => fileName.endsWith('.txt'));
+    section.innerHTML = ''; // Clear the section after checking for articles
 
-            if (txtFiles.length === 0) {
-                section.innerHTML = '<p>No articles available.</p>';
-                return;
-            }
-
-            section.innerHTML = ''; // Clear the section after checking for articles
-
-            txtFiles.forEach(txtFile => {
-                fetch(articlePath + txtFile)
-                    .then(response => response.text())
-                    .then(text => {
-                        const articleData = parseArticle(text);
-                        articlesDictionary[articleData.title] = articleData;
-                        createArticleElement(articleData);
-                    });
+    articleFiles.forEach(txtFile => {
+        fetch(txtFile)
+            .then(response => response.text())
+            .then(text => {
+                const articleData = parseArticle(text);
+                createArticleElement(articleData);
+            })
+            .catch(error => {
+                section.innerHTML += `<p>Error loading article from ${txtFile}: ${error.message}</p>`;
             });
-        })
-        .catch(error => {
-            section.innerHTML = `<p>Error loading articles: ${error.message}</p>`;
-        });
+    });
 }
 
 document.getElementById('articles').addEventListener('click', function(event) {
