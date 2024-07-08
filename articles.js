@@ -5,47 +5,42 @@ const articleFiles = [
         author: "John Doe",
         date: "2024-07-01",
         content: "In an impressive outing, the Louisiana Tech Bulldogs secured a major victory against their rivals...",
-        image: "test1.png"
+        image: "pictures/RFD_Media.png"
     },
     {
         title: "Season Preview: What to Expect",
         author: "Jane Smith",
         date: "2024-06-30",
         content: "As the new season approaches, here’s what fans can look forward to from the Bulldogs...",
-        image: "https://via.placeholder.com/500x300.png?text=Season+Preview",
-        image: "test1.png"
+        image: "pictures/RFD_Media2.png"
     },
     {
         title: "A Look at New Recruits",
         author: "Alice Johnson",
         date: "2024-06-29",
         content: "Louisiana Tech is welcoming a talented batch of new players this season. Here's a deep dive into the recruits...",
-        image: "https://via.placeholder.com/500x300.png?text=New+Recruits",
-        image: "test1.png"
+        image: "pictures/RFD_Media3.png"
     },
     {
         title: "Bulldogs Win Big!",
         author: "John Doe",
         date: "2024-07-01",
         content: "In an impressive outing, the Louisiana Tech Bulldogs secured a major victory against their rivals...",
-        image: "https://via.placeholder.com/500x300.png?text=Bulldogs+Win+Big",
-        image: "test1.png"
+        image: "pictures/RFD_Media4.png"
     },
     {
         title: "Season Preview: What to Expect",
         author: "Jane Smith",
         date: "2024-06-30",
         content: "As the new season approaches, here’s what fans can look forward to from the Bulldogs...",
-        image: "https://via.placeholder.com/500x300.png?text=Season+Preview",
-        image: "test1.png"
+        image: "pictures/RFD_Media5.png"
     },
     {
         title: "A Look at New Recruits",
         author: "Alice Johnson",
         date: "2024-06-29",
         content: "Louisiana Tech is welcoming a talented batch of new players this season. Here's a deep dive into the recruits...",
-        image: "https://via.placeholder.com/500x300.png?text=New+Recruits",
-        image: "test1.png"
+        image: "pictures/RFD_Media6.png"
     }
 ];
 
