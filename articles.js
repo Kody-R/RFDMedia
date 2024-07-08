@@ -1,82 +1,95 @@
-// Static list of article file paths
+// Example articles for testing
 const articleFiles = [
-    'Articles/article1.txt',
-    'Articles/article2.txt',
-    'Articles/article3.txt'
+    {
+        title: "Bulldogs Win Big!",
+        author: "John Doe",
+        date: "2024-07-01",
+        content: "In an impressive outing, the Louisiana Tech Bulldogs secured a major victory against their rivals...",
+        image: "test1.png"
+    },
+    {
+        title: "Season Preview: What to Expect",
+        author: "Jane Smith",
+        date: "2024-06-30",
+        content: "As the new season approaches, here’s what fans can look forward to from the Bulldogs...",
+        image: "https://via.placeholder.com/500x300.png?text=Season+Preview",
+        image: "test1.png"
+    },
+    {
+        title: "A Look at New Recruits",
+        author: "Alice Johnson",
+        date: "2024-06-29",
+        content: "Louisiana Tech is welcoming a talented batch of new players this season. Here's a deep dive into the recruits...",
+        image: "https://via.placeholder.com/500x300.png?text=New+Recruits",
+        image: "test1.png"
+    },
+    {
+        title: "Bulldogs Win Big!",
+        author: "John Doe",
+        date: "2024-07-01",
+        content: "In an impressive outing, the Louisiana Tech Bulldogs secured a major victory against their rivals...",
+        image: "https://via.placeholder.com/500x300.png?text=Bulldogs+Win+Big",
+        image: "test1.png"
+    },
+    {
+        title: "Season Preview: What to Expect",
+        author: "Jane Smith",
+        date: "2024-06-30",
+        content: "As the new season approaches, here’s what fans can look forward to from the Bulldogs...",
+        image: "https://via.placeholder.com/500x300.png?text=Season+Preview",
+        image: "test1.png"
+    },
+    {
+        title: "A Look at New Recruits",
+        author: "Alice Johnson",
+        date: "2024-06-29",
+        content: "Louisiana Tech is welcoming a talented batch of new players this season. Here's a deep dive into the recruits...",
+        image: "https://via.placeholder.com/500x300.png?text=New+Recruits",
+        image: "test1.png"
+    }
 ];
 
 document.addEventListener('DOMContentLoaded', function() {
     loadArticles();
-    addEventListenerToArticles();
 });
 
-function parseArticle(text) {
-    const lines = text.split('\n');
-    const title = lines[0].replace('Title: ', '');
-    const author = lines[1].replace('Author: ', '');
-    const date = lines[2].replace('Date: ', '');
-    const content = lines.slice(4).join('\n');
-    return { title, author, date, content };
+function createArticleElement(article) {
+    const section = document.getElementById('articles');
+    const articleDiv = document.createElement('article');
+
+    const figure = document.createElement('figure');
+    const img = document.createElement('img');
+    img.src = article.image;
+    figure.appendChild(img);
+
+    const contentDiv = document.createElement('div');
+    contentDiv.className = 'article-preview';
+
+    const header = document.createElement('h2');
+    header.textContent = article.title;
+
+    const paragraph = document.createElement('p');
+    paragraph.textContent = article.content;
+
+    const readMoreLink = document.createElement('a');
+    readMoreLink.href = "#";
+    readMoreLink.className = "read-more";
+    readMoreLink.textContent = "Read more";
+
+    contentDiv.appendChild(header);
+    contentDiv.appendChild(paragraph);
+    contentDiv.appendChild(readMoreLink);
+
+    articleDiv.appendChild(figure);
+    articleDiv.appendChild(contentDiv);
+    section.appendChild(articleDiv);
 }
 
 function loadArticles() {
     const section = document.getElementById('articles');
-    section.innerHTML = '<p>Loading articles...</p>'; // Provide feedback while loading
+    section.innerHTML = ''; // Clear the section before adding new articles
 
-    if (articleFiles.length === 0) {
-        section.innerHTML = '<p>No articles available.</p>';
-        return;
-    }
-
-    section.innerHTML = ''; // Clear the section after checking for articles
-
-    articleFiles.forEach(txtFile => {
-        fetch(txtFile)
-            .then(response => response.text())
-            .then(text => {
-                const articleData = parseArticle(text);
-                createArticleElement(articleData);
-            })
-            .catch(error => {
-                section.innerHTML += `<p>Error loading article from ${txtFile}: ${error.message}</p>`;
-            });
+    articleFiles.forEach(article => {
+        createArticleElement(article);
     });
-}
-
-function addEventListenerToArticles() {
-    const articlesSection = document.getElementById('articles');
-    articlesSection.addEventListener('click', function(event) {
-        if (event.target && event.target.matches('.read-button')) {
-            const title = event.target.getAttribute('data-title');
-            displayArticle(title);
-        }
-    });
-}
-
-function createArticleElement(article) {
-    const section = document.getElementById('articles');
-    const articleDiv = document.createElement('div');
-    articleDiv.className = 'article';
-    const header = document.createElement('h2');
-    header.textContent = article.title;
-    const button = document.createElement('button');
-    button.textContent = 'Read';
-    button.classList.add('read-button');  // Ensure this class is added
-    button.setAttribute('data-title', article.title);
-
-    articleDiv.appendChild(header);
-    articleDiv.appendChild(button);
-    section.appendChild(articleDiv);
-}
-
-function displayArticle(title) {
-    const article = articleFiles.find(article => article.title === title);
-    const section = document.getElementById('articles');
-    section.innerHTML = `
-        <h2>${article.title} </h2>
-        <p><strong>Author:</strong> ${article.author}</p>
-        <p><strong>Date:</strong> ${article.date}</p>
-        <div class="article-content">${article.content}</div>
-        <button class='back-button'>Back to Articles</button>
-    `;
 }
